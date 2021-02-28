@@ -1,0 +1,578 @@
+<link rel="stylesheet" href="/css/dropdown.css">
+<title><%= text.title %></title>
+</head>
+
+<body>
+
+
+  <%- include('./parts/header') -%>
+
+  <div class="main container-fluid">
+    <div id="fader">
+    </div>
+    <img src="/images/flag-uk.svg" alt="JARM Web Solutions" style="display:none;">
+    <div class="row justify-content-center align-items-center" id="banner-wrap">
+      <div class="col-11 col-md-9 col-lg-9 col-xl-8 glow-white">
+        <div class="row justify-content-center" style="background-color: #020401; border-radius: 10px;">
+          <div class="col-xl-6 col-lg-6 col-md-12 px-0">
+            <img id="banner-pic" src="/images/banner.png" alt="JARM Web Solutions" style="width: 100%; border-radius:10px;">
+          </div>
+          <div class="col-xl-6 col-lg-6 col-md-12 px-0 my-auto">
+            <h1 id="design-banner" class="banner-text-sm">
+              <%= text.banner_1 %></br>
+              <%= text.banner_1_2 %>
+            </h1>
+            <h1 id="approach-banner" class="banner-text-sm">
+              <%= text.banner_2 %></br>
+              <%= text.banner_2_2 %>
+            </h1>
+            <h1 id="dev-banner" class="banner-text-sm">
+              <%= text.banner_3 %></br>
+              <%= text.banner_3_2 %>
+            </h1>
+            <h1 id="jarm-banner-wrap" class="text-xl">
+              <span id="jarm-banner">JARM</span> </br>
+              <span id="web-banner">Web Solutions</span>
+            </h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="calc-wrap" class="row justify-content-center" style="padding-top:6em">
+      <div id="calc-wrap-col" class="col-11 col-md-8 col-lg-8 col-xl-6 pr-4 calc-wrap">
+        <div id="calc-wrap-click" class="row px-0">
+          <div class="col-2 calc-button" style="z-index: 2;">
+            <img src="/images/calc.svg" alt="JARM Web Solutions" style="width:40%; ">
+          </div>
+          <div class="col-8 col-sm-9 my-auto" style="z-index: 2;">
+            <h4 class="calc-header" style="padding-left: 6%;"><%= text.calculate_banner %></h4>
+          </div>
+          <div class="col-2 col-sm-1 my-auto" style="z-index: 2;">
+            <img src="/images/arrow.svg" alt="JARM Web Solutions" style="width:80%; ">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="calc-workflow" class="row justify-content-center" style="padding-top:6em">
+      <div id="calc-workflow-col" class="col-12 col-md-12 col-lg-9 col-xl-8 calc-workflow">
+        <div class="row justify-content-center">
+          <div class="col">
+            <span id="calc-close" aria-hidden="true">&times;</span>
+          </div>
+          <div class="col-3 d-lg-none" style="text-align:end; margin-bottom: 3rem">
+            <img id="calc-help-mobile" src="/images/help.svg" style="height: 65%" alt="Help" data-toggle="modal" data-target="#calc-help-modal">
+          </div>
+          <div class="col-9 my-auto" style="text-align: center">
+            <h4 id="calc-workflow-header"></h4>
+          </div>
+          <div class="col d-none d-lg-block" style="text-align:end">
+            <img id="calc-help" src="/images/help.svg" alt="Help" data-toggle="modal" data-target="#calc-help-modal">
+          </div>
+        </div>
+        <div id="calc-questions" class="row justify-content-center" style="margin-top: 4.5%;">
+          <div class="col-xl-4 offset-xl-1 offset-lg-0 col-lg-4 col-md-8 col-sm-10">
+            <span id="answer_0" class="answer-text"><img src="/images/calc-arrow.svg" class="calc-arrow"><span class="hover hover-underline"></span></span><br><br class="extra-break">
+            <span id="answer_1" class="answer-text"><img src="/images/calc-arrow.svg" class="calc-arrow"><span class="hover hover-underline"></span></span><br><br class="extra-break">
+            <span id="answer_2" class="answer-text"><img src="/images/calc-arrow.svg" class="calc-arrow"><span class="hover hover-underline"></span></span><br><br class="extra-break">
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-8 col-sm-10">
+            <span id="answer_3" class="answer-text"><img src="/images/calc-arrow.svg" class="calc-arrow"><span class="hover hover-underline"></span></span><br><br class="extra-break">
+            <span id="answer_4" class="answer-text"><img src="/images/calc-arrow.svg" class="calc-arrow"><span class="hover hover-underline"></span></span><br><br class="extra-break">
+            <span id="answer_5" class="answer-text"><img src="/images/calc-arrow.svg" class="calc-arrow"><span class="hover hover-underline"></span></span><br><br class="extra-break">
+          </div>
+        </div>
+        <div id="calc-cards" class="row justify-content-center" style="margin-top: 2.5%; margin-bottom:2.5%">
+          <div class="card-deck justify-content-center">
+          <div id="calc-card_1" class="col-xl-5 col-lg-7 col-md-8 col-sm-10 calc-card card">
+            <div class="row justify-content-center card-header">
+              <div class="col px-0" style="text-align: left">
+                <span id="calc-card_1-name" class="calc-card-big"></span></br></br>
+
+              </div>
+            </div>
+            <div class="card-body">
+              <span id="calc-card_1-desc" class="calc-card-sm"></span></br></br>
+              </div>
+              <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-6 px-0 card-margin-mobile" style="text-align: left; margin-top: 3.45%">
+                <span class="calc-card-sm"><%= text.calculate_card.deadline %></span>
+              </div>
+              <div class="col-6 px-0" style="text-align: end">
+                <span class="calc-card-sm" style="margin-right:5%"><%= text.calculate_card.from %></span><span id="calc-card_1-time" class="calc-card-big"></span><span class="calc-card-sm" style="margin-left:5%"><%= text.calculate_card.days %></span></br></br>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-6 px-0 card-margin-mobile" style="text-align: left; margin-top: 3.45%">
+                <span class="calc-card-sm"><%= text.calculate_card.price %></span>
+              </div>
+              <div class="col-6 px-0" style="text-align: end">
+                <span class="calc-card-sm" style="margin-right:5%"><%= text.calculate_card.from %></span><span id="calc-card_1-price" class="calc-card-big"></span></br></br>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col px-0" style="text-align: center">
+                <button class="orange-button portfolio-header text-sm calc-card-submit" style="font-size:1.5rem; margin-top:2.5%;" parent="calc-card_1"><%= text.calculate_card.order %></button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div id="calc-card_2" class="col-xl-5 col-lg-7 col-md-8 col-sm-10 calc-card card">
+            <div class="row justify-content-center card-header">
+              <div class="col px-0" style="text-align: left">
+                <span id="calc-card_2-name" class="calc-card-big"></span></br></br>
+
+              </div>
+            </div>
+            <div class="card-body">
+              <span id="calc-card_2-desc" class="calc-card-sm"></span></br></br>
+              </div>
+              <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-6 px-0 card-margin-mobile" style="text-align: left; margin-top: 3.45%">
+                <span class="calc-card-sm"><%= text.calculate_card.deadline %></span>
+              </div>
+              <div class="col-6 px-0" style="text-align: end">
+                <span class="calc-card-sm" style="margin-right:5%"><%= text.calculate_card.from %></span><span id="calc-card_2-time" class="calc-card-big"></span><span class="calc-card-sm" style="margin-left:5%"><%= text.calculate_card.days %></span></br></br>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-6 px-0 card-margin-mobile" style="text-align: left; margin-top: 3.45%">
+                <span class="calc-card-sm"><%= text.calculate_card.price %></span>
+              </div>
+              <div class="col-6 px-0" style="text-align: end">
+                <span class="calc-card-sm" style="margin-right:5%"><%= text.calculate_card.from %></span><span id="calc-card_2-price" class="calc-card-big"></span></br></br>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col px-0" style="text-align: center">
+                <button class="orange-button portfolio-header text-sm calc-card-submit" style="font-size:1.5rem; margin-top:2.5%;" parent="calc-card_2"><%= text.calculate_card.order %></button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div id="calc-card_3" class="col-xl-5 col-lg-7 col-md-8 col-sm-10 calc-card card">
+            <div class="row justify-content-center card-header">
+              <div class="col px-0" style="text-align: left">
+                <span id="calc-card_3-name" class="calc-card-big"></span></br></br>
+              </div>
+            </div>
+            <div class="card-body">
+              <span id="calc-card_3-desc" class="calc-card-sm"></span></br></br>
+              </div>
+              <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-6 px-0 card-margin-mobile" style="text-align: left; margin-top: 3.45%">
+                <span class="calc-card-sm"><%= text.calculate_card.deadline %></span>
+              </div>
+              <div class="col-6 px-0" style="text-align: end">
+                <span class="calc-card-sm" style="margin-right:5%"><%= text.calculate_card.from %></span><span id="calc-card_3-time" class="calc-card-big"></span><span class="calc-card-sm" style="margin-left:5%"><%= text.calculate_card.days %></span></br></br>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-6 px-0 card-margin-mobile" style="text-align: left; margin-top: 3.45%">
+                <span class="calc-card-sm"><%= text.calculate_card.price %></span>
+              </div>
+              <div class="col-6 px-0" style="text-align: end">
+                <span class="calc-card-sm" style="margin-right:5%"><%= text.calculate_card.from %></span><span id="calc-card_3-price" class="calc-card-big"></span></br></br>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col px-0" style="text-align: center">
+                <button class="orange-button portfolio-header text-sm calc-card-submit" style="font-size:1.5rem; margin-top:2.5%;" parent="calc-card_3"><%= text.calculate_card.order %></button>
+              </div>
+            </div>
+            </div>
+          </div>
+          <div id="calc-card_4" class="col-xl-5 col-lg-7 col-md-8 col-sm-10 calc-card card">
+            <div class="row justify-content-center card-header">
+              <div class="col px-0" style="text-align: left">
+                <span id="calc-card_4-name" class="calc-card-big"></span></br></br>
+              </div>
+            </div>
+            <div class="card-body">
+              <span id="calc-card_4-desc" class="calc-card-sm"></span></br></br>
+              </div>
+              <div class="card-footer">
+            <div class="row justify-content-center">
+              <div class="col-6 px-0 card-margin-mobile" style="text-align: left; margin-top: 3.45%">
+                <span class="calc-card-sm"><%= text.calculate_card.deadline %></span>
+              </div>
+              <div class="col-6 px-0" style="text-align: end">
+                <span class="calc-card-sm" style="margin-right:5%"><%= text.calculate_card.from %></span><span id="calc-card_4-time" class="calc-card-big"></span><span class="calc-card-sm" style="margin-left:5%"><%= text.calculate_card.days %></span></br></br>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col-6 px-0 card-margin-mobile" style="text-align: left; margin-top: 3.45%">
+                <span class="calc-card-sm"><%= text.calculate_card.price %></span>
+              </div>
+              <div class="col-6 px-0" style="text-align: end">
+                <span class="calc-card-sm" style="margin-right:5%"><%= text.calculate_card.from %></span><span id="calc-card_4-price" class="calc-card-big"></span></br></br>
+              </div>
+            </div>
+            <div class="row justify-content-center">
+              <div class="col px-0" style="text-align: center">
+                <button class="orange-button portfolio-header text-sm calc-card-submit" style="font-size:1.5rem; margin-top:2.5%;" parent="calc-card_4"><%= text.calculate_card.order %></button>
+              </div>
+            </div>
+            </div>
+          </div>
+
+          </div>
+        </div>
+        <div id="calc-form" class="row justify-content-center align-items-center" style="margin-top:6%">
+          <div class="col-xl-8 col-md-10 col-sm-11 px-0">
+            <form action="/sendform" method="post" onsubmit="return validateForm('-calc')">
+              <input type="hidden" name="lang" value="<%= lang %>">
+              <input type="hidden" name="type" id="type" value="">
+              <input type="hidden" name="budget" id="budget" value="">
+              <input type="hidden" name="time" id="time" value="">
+              <input type="hidden" name="desc" id="desc_calc" value="">
+              <input type="text" id="desc_2-calc" name="desc_2" class="text-input" placeholder="<%= text.form_name_placeholder %>" autocomplete="off">
+              <div class="row justify-content-start align-items-center">
+                <div class="col-12">
+                  <div class="row justify-content-start align-items-center" style="margin-bottom:2.5em;">
+                    <div class="col-xl-6 col-lg-6 col-md-7" style="margin-bottom:0.5em">
+                      <input type="text" name="name" id="name-calc" class="text-input validable-calc" placeholder="<%= text.form_name_placeholder %>" autocomplete="off">
+                    </div>
+                  </div>
+                  <div class="row justify-content-start align-items-center" style="margin-bottom: 1.5em">
+                    <div class="col-xl-6 col-lg-6 col-md-7">
+                      <select id="contact-calc" name="contact" multiple="multiple" placeholder="<%= text.form_contact_placeholder %>">
+                        <option value="mail">E-mail</option>
+                        <option value="phone"><%= text.form_contact[0] %></option>
+                        <option value="tg">Telegram</option>
+                        <option value="whatsapp">WhatsApp</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="row justify-content-start align-items-center" style="">
+                    <div class="col-xl-6 col-lg-6 col-md-7 contact-wrap" id="mail-calc">
+                      <span class="form-label">E-mail</span>
+                      <input type="text" name="mail" id="mail-input-calc" class="text-input validable" placeholder="jarm@jarm-web.com" autocomplete="off">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 contact-wrap" id="phone-calc">
+                      <span class="form-label"><%= text.form_contact[0] %></span>
+                      <input type="text" name="phone" id="phone-input-calc" class="text-input validable" placeholder="+79001234567" autocomplete="off">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 contact-wrap" id="tg-calc">
+                      <span class="form-label">Telegram</span>
+                      <input type="text" name="tg" id="tg-input-calc" class="text-input validable" placeholder="+79001234567 / @jarm-official" autocomplete="off">
+                    </div>
+                    <div class="col-xl-6 col-lg-6 col-md-7 contact-wrap" id="whatsapp-calc">
+                      <span class="form-label">WhatsApp</span>
+                      <input type="text" name="whatsapp" id="whatsapp-input-calc" class="text-input validable" placeholder="+79001234567" autocomplete="off">
+                    </div>
+                  </div>
+                  <div class="row justify-content-start align-items-center" style="margin-top: 4em; ">
+                    <div class="col-xl-7 col-lg-8">
+                      <input type="checkbox" name="agree" id="agree-calc" class="custom-checkbox-dark validable" checked> <label for="agree" class="form-label" style="font-size: 0.7rem"><%= text.form_agreement_1 %><a href="/"
+                          style="color: inherit; text-decoration: underline">
+                          <%= text.form_agreement_2 %></a></label>
+                    </div>
+                  </div>
+                  <div class="row justify-content-start align-items-center" style="margin-bottom: 4em; ">
+                    <div id="submit-calc-col" class="col-xl-6 col-lg-6">
+                      <button type="submit" id="submit-calc" class="orange-button portfolio-header text-sm button-disabled" style="font-size:1.2rem; margin-top: 2.5%;"><%= text.form_send_button %></button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <div id="portfolio" class="row justify-content-center align-items-center" style="padding-top:6em;">
+      <div class="col-md-7 col-11 col-lg-4 col-xl-3 px-0" style="text-align:left">
+        <h1 class="text-big"><%= text.project_block.header %></h1>
+      </div>
+      <div class="col-md-7 col-11 col-lg-5 col-xl-5 px-0 text-block-border" style="text-align:left">
+        <h4 class="text-small" style="margin-top:-10px; margin-bottom:0;"><%= text.project_block.text %></h4>
+      </div>
+    </div>
+    <div id="portfolio-pics" class="row justify-content-center align-items-center" style="padding-top:5em;">
+      <div class="col-11 col-md-9 col-lg-9 col-xl-8 px-0 d-none d-lg-block">
+        <div class="row justify-content-center" style="margin-bottom: 2.5em">
+          <div class="col-lg-6 col-12 portfolio-col">
+            <a href="/" target="_blank"><img id="portfolio-1" class="glow-white-portfolio portfolio-image" src="/images/portfolio1.jpg" alt="JARM Web Solutions" style="width: 100%;"></a>
+          </div>
+          <div class="col-lg-6 col-12 portfolio-col" style="text-align:center">
+            <div id="portfolio-1-text" class="portfolio-text">
+              <h2 class="portfolio-header "><%= text.project_1.header %></h2>
+              <h4 class=" portfolio-text-sm"><%= text.project_1.text %></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-bottom: 2.5em">
+          <div class="col-lg-6 col-12 portfolio-col" style="text-align:center">
+            <div id="portfolio-2-text" class="portfolio-text portfolio-right">
+              <h2 class="portfolio-header "><%= text.project_2.header %></h2>
+              <h4 class=" portfolio-text-sm"><%= text.project_2.text %></h4>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 portfolio-col">
+            <a href="/" target="_blank"><img id="portfolio-2" class="glow-white-portfolio portfolio-image" src="/images/portfolio2.jpg" alt="JARM Web Solutions" style="width: 100%;"></a>
+          </div>
+        </div>
+        <div class="row justify-content-center" style="margin-bottom: 2.5em">
+          <div class="col-lg-6 col-12 portfolio-col">
+            <a href="https://lcardio.com" target="_blank"><img id="portfolio-3" class="glow-white-portfolio portfolio-image" src="/images/portfolio3.jpg" alt="JARM Web Solutions" style="width: 100%;"></a>
+          </div>
+          <div class="col-lg-6 col-12 portfolio-col" style="text-align:center">
+            <div id="portfolio-3-text" class="portfolio-text">
+              <h2 class="portfolio-header "><%= text.project_3.header %></h2>
+              <h4 class=" portfolio-text-sm"><%= text.project_3.text %></h4>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-lg-6 col-12 portfolio-col" style="text-align:center">
+            <div id="portfolio-4-text" class="portfolio-text portfolio-right">
+              <h2 class="portfolio-header "><%= text.project_4.header %></h2>
+              <h4 class=" portfolio-text-sm"><%= text.project_4.text %></h4>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12 portfolio-col">
+            <a href="http://stkargo.ru" target="_blank"><img id="portfolio-4" class="glow-white-portfolio portfolio-image" src="/images/portfolio4.jpg" alt="JARM Web Solutions" style="width: 100%;"></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-11 col-md-10 d-lg-none">
+        <div class="row justify-content-start" style="margin-bottom: 2rem">
+          <div class="col-7 col-md-5 px-0" style="white-space: nowrap;">
+            <h2 class="portfolio-header"><%= text.project_1.header %></h2>
+            <a href="/" target="_blank"><img class="glow-white-portfolio portfolio-image-mobile" src="/images/portfolio1.jpg" alt="JARM Web Solutions" style="width: 100%;"></a>
+          </div>
+        </div>
+        <div class="row justify-content-start" style="margin-bottom: 2rem">
+          <div class="col-7 offset-5 col-md-5 offset-md-7 px-0">
+            <h2 class="portfolio-header"><%= text.project_2.header %></h2>
+            <a href="/" target="_blank"><img class="glow-white-portfolio portfolio-image-mobile" src="/images/portfolio2.jpg" alt="JARM Web Solutions" style="width: 100%;"></a>
+          </div>
+        </div>
+        <div class="row justify-content-start" style="margin-bottom: 2rem">
+          <div class="col-7 col-md-5 px-0" style="white-space: nowrap;">
+            <h2 class="portfolio-header"><%= text.project_3.header %></h2>
+            <a href="https://lcardio.com" target="_blank"><img class="glow-white-portfolio portfolio-image-mobile" src="/images/portfolio3.jpg" alt="JARM Web Solutions" style="width: 100%;"></a>
+          </div>
+        </div>
+        <div class="row justify-content-start" style="margin-bottom: 2rem">
+          <div class="col-7 offset-5 col-md-5 offset-md-7 px-0">
+            <h2 class="portfolio-header"><%= text.project_4.header %></h2>
+            <a href="http://stkargo.ru" target="_blank"><img class="glow-white-portfolio portfolio-image-mobile" src="/images/portfolio4.jpg" alt="JARM Web Solutions" style="width: 100%;"></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="button-calc-mobile" class="row justify-content-center">
+      <div class="col-10" style="text-align:center">
+        <button id="calc-mobile-click" class="orange-button portfolio-header" style="font-size:0.9rem !important; padding: 5% 12% 5% 12%; width: 80%; border-radius: 6px; letter-spacing: 0.05em;"><%= text.calculate_banner %></button>
+        </div>
+      </div>
+<div id="services-link"></div>
+      <div id="services-mobile" class="row justify-content-center align-items-center">
+        <div class="col-md-7 col-11 col-lg-4 col-xl-3 px-0" style="text-align:left">
+          <h1 class="text-big"><%= text.services_block %></h1>
+        </div>
+      </div>
+      <div id="services-mobile-block" class="row justify-content-center" style="padding-top:1rem; margin-top:2rem; padding-bottom: 1.5rem;">
+        <div class="col-12">
+          <h4 class="services-mobile-header"><%= text.dev_block.header %></h4>
+          </div>
+          <div class="col-11" style="text-align:center">
+            <h4 id="services-mobile-text" class="text-small" style="margin-top:-10px; margin-bottom:0; text-align: center"></h4>
+          </div>
+          <div class="col-7" style="text-align:start">
+            <h4 class="services-mobile-text dev-mobile-text" content="dev_web"><%= text.dev_web.header %></h4>
+            <h4 class="services-mobile-text dev-mobile-text" content="dev_mobile"><%= text.dev_mobile.header %></h4>
+            <h4 class="services-mobile-text dev-mobile-text" content="dev_bot"><%= text.dev_bot.header %></h4>
+            </div>
+          <div class="col-5" style="text-align:start">
+            <h4 class="services-mobile-text dev-mobile-text" content="dev_landing"><%= text.dev_landing.header %></h4>
+            <h4 class="services-mobile-text dev-mobile-text" content="dev_support"><%= text.dev_support.header %></h4>
+            </div>
+      </div>
+      <div id="designs-mobile-block" class="row justify-content-center" style="padding-top: 1rem; margin-top:2.5rem; padding-bottom: 2.25rem;">
+        <div class="col-12">
+          <h4 class="services-mobile-header"><%= text.des_block.header %></h4>
+          </div>
+          <div class="col-11" style="text-align:center">
+            <h4 id="designs-mobile-text" class="text-small" style="margin-top:-10px; margin-bottom:0; text-align: center"></h4>
+          </div>
+          <div class="col-7" style="text-align:start">
+            <h4 class="services-mobile-text des-mobile-text" content="des_ux"><%= text.des_ux.header %></h4>
+            <h4 class="services-mobile-text des-mobile-text" content="des_ui"><%= text.des_ui.header %></h4>
+            <h4 class="services-mobile-text des-mobile-text" content="des_graph"><%= text.des_graph.header %></h4>
+            </div>
+          <div class="col-5" style="text-align:start">
+            </div>
+      </div>
+
+    <div id="feedback-button-wrap" class="row justify-content-center align-items-center" style="padding-top:5em;">
+      <div class="col-11 col-md-7 col-lg-7 col-xl-5 " style="text-align:center">
+        <button class="glow-white-button feedback-button" data-toggle="modal" data-target="#feedback"><%= text.form_button %></button>
+      </div>
+    </div>
+    <div id="services" class="row justify-content-center align-items-center" style="padding-top:5em;">
+      <div class="col-11 col-xl-10 dev-block accordion-wrap">
+        <div class="row justify-content-center align-items-center" style="margin-bottom: 2.5em">
+          <div class="col-md-11 col-lg-5 px-0" style="text-align:left">
+            <h1 class="text-big"><%= text.dev_block.header %></h1>
+          </div>
+          <div class="col-md-11 col-11 col-lg-7 px-0 text-block-border" style="text-align:left">
+            <h4 class="text-small" style="margin-top:-10px; margin-bottom:0; padding-top: 1.5rem; padding-bottom: 1.5rem"><%= text.dev_block.text %></h4>
+          </div>
+        </div>
+        <div class="row justify-content-start align-items-start">
+          <div class="col-md-10 col-lg-5 px-0">
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><%= text.dev_web.header %></div>
+                <div class="accordion-body js-accordion-body">
+                  <div id="dev_web" class="accordion-body__contents">
+                    <%= text.dev_web.text %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><%= text.dev_mobile.header %></div>
+                <div class="accordion-body js-accordion-body">
+                  <div id="dev_mobile" class="accordion-body__contents">
+                    <%= text.dev_mobile.text %></div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><%= text.dev_bot.header %></div>
+                <div class="accordion-body js-accordion-body">
+                  <div id="dev_bot" class="accordion-body__contents">
+                    <%= text.dev_bot.text %></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-10 col-lg-5 offset-lg-1 px-0">
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><%= text.dev_landing.header %></div>
+                <div class="accordion-body js-accordion-body">
+                  <div id="dev_landing" class="accordion-body__contents">
+                    <%= text.dev_landing.text %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><%= text.dev_support.header %></div>
+                <div class="accordion-body js-accordion-body">
+                  <div id="dev_support" class="accordion-body__contents">
+                    <%= text.dev_support.text %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="designs" class="row justify-content-center align-items-center" style="padding-top:5em;">
+      <div class="col-11 col-xl-10 design-block accordion-wrap">
+        <div class="row justify-content-center align-items-center" style="margin-bottom: 2.5em">
+          <div class="col-md-11 col-lg-5 px-0" style="text-align:left">
+            <h1 class="text-big"><%= text.des_block.header %></h1>
+          </div>
+          <div class="col-md-11 col-11 col-lg-7 px-0 text-block-border" style="text-align:left">
+            <h4 class="text-small" style="margin-top:-10px; margin-bottom:0; padding-top: 1.5rem; padding-bottom: 1.5rem"><%= text.des_block.text %></h4>
+          </div>
+        </div>
+        <div class="row justify-content-start align-items-start">
+          <div class="col-md-10 col-lg-5 px-0">
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><%= text.des_ux.header %></div>
+                <div class="accordion-body js-accordion-body">
+                  <div id="des_ux" class="accordion-body__contents">
+                    <%= text.des_ux.text %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><%= text.des_ui.header %></div>
+                <div class="accordion-body js-accordion-body">
+                  <div id="des_ui" class="accordion-body__contents">
+                    <%= text.des_ui.text %>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="accordion js-accordion">
+              <div class="accordion__item js-accordion-item">
+                <div class="accordion-header js-accordion-header"><%= text.des_graph.header %></div>
+                <div class="accordion-body js-accordion-body">
+                  <div id="des_graph" class="accordion-body__contents">
+                    <%= text.des_graph.text %>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="about" class="row justify-content-center align-items-center" style="padding-top:5em;">
+      <div class="col-11 col-xl-10" style="padding-left: 5%; padding-right: 5%;">
+        <div class="row justify-content-center align-items-center" style="margin-bottom: 2.5em">
+          <div class="col-md-11 col-lg-5 px-0" style="text-align:left">
+            <h1 class="text-big"><%= text.about_block.header %></h1>
+          </div>
+          <div class="col-md-11 col-11 col-lg-7 px-0 text-block-border" style="text-align:left">
+            <h4 class="text-small" style="margin-top:-10px; margin-bottom:0; padding-top: 1.5rem; padding-bottom: 1.5rem">
+              <%= text.about_block.text %></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="button-about" class="row justify-content-center align-items-center" style="padding-top:5em; padding-bottom:5em;">
+      <div class="col-11 col-md-7 col-lg-7 col-xl-5 " style="text-align:center">
+        <a href="/about<%= link %>"><button class="glow-white-button feedback-button"><%= text.about_button %></button></a>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="calc-help-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content calc-card" style="box-shadow: none; padding:0;">
+        <div class="modal-header" style="padding-top: 1.2%; padding-bottom: 0;">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" style="color:#000; font-size: 3rem;">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body" style="text-align:center">
+          <span class="calc-card-big" style="font-size: 1.5rem;">Не знаете, что выбрать или есть вопросы?</span></br></br></br>
+          <span class="calc-card-sm">Свяжитесь с нами в социальных сетях:</span></br></br>
+          <a href="" class="icon-calc"><img src="/images/tg-color.svg"></a>
+          <a href="" class="icon-calc"><img src="/images/whatsapp-color.svg"></a>
+          <a href="" class="icon-calc"><img src="/images/vk-color.svg"></a></br></br></br>
+          <span class="calc-card-sm">или</span></br></br></br>
+          <span class="calc-card-sm">Напишите на нашу почту:</span></br></br>
+          <a href=""><span class="calc-card-sm" style="text-decoration: underline; font-weight: 600">help.jarm@gmail.com</span></a></br></br></br>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <%- include('./parts/footer') -%>
+
+  <script src="/js/calc-<%= lang %>.js"></script>
+  <script src="/js/calc.js"></script>

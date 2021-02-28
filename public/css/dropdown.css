@@ -1,0 +1,39 @@
+.ms-choice {
+  border-bottom: solid 1px #E1EDF8 !important;
+  border-bottom: solid 1px rgb(225, 237, 248, 0.6) !important;
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-radius: 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+}
+
+.ms-choice>span {
+  top: -35%;
+  padding-left: 0;
+}
+
+.icon-caret {
+  border-color: #E1EDF8 transparent transparent transparent !important;
+  top: 10%;
+}
+
+.icon-caret.open {
+  border-color: transparent transparent #E1EDF8 transparent !important;
+  top: 10%;
+}
+.placeholder {
+  color: rgb(256, 256, 256, 0.4) !important;
+}
+.ms-parent {
+  width: 95% !important;
+}
+.card-header {
+  padding: 0 !important;
+  border: none !important;
+  background-color: transparent !important;
+}
+.card-body {
+  padding: 0 !important;
+}

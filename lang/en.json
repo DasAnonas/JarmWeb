@@ -1,0 +1,241 @@
+{
+  "lang": "en",
+  "header": {
+    "portfolio": "PORTFOLIO",
+    "services": "SERVICES",
+    "about": "ABOUT US",
+    "contacts": "CONTACTS",
+    "job": "CAREERS",
+    "form_service_paceholder": "Select the service (or few)",
+    "form_service": ["Development", "Design", "Landing Page", "Online Store", "Corporate Website", "Brand Identity"],
+    "form_name_placeholder": "Your name",
+    "form_desc_placeholder": "Describe your project",
+    "form_contact_placeholder": "Choose ways of communication",
+    "form_contact": ["Phone"],
+    "form_file_1": "Choose the file ",
+    "form_file_2": "or drag it over here",
+    "form_agreement_1": "I am agreed with ",
+    "form_agreement_2": "terms of use",
+    "form_send_button": "Send"
+  },
+  "footer": {
+
+  },
+  "landing": {
+    "title": "JARM Web Solutions — websites, chat bots, applications development.",
+    "seo": {
+      "keywords": "website development design web studio promotion",
+      "desc": "We create modern digital products of any level of complexity. We are ready to help with the promotion of your project! We guarantee exceptional quality and only positive feelings from our cooperation!"
+    },
+    "banner_1": "Remarkable",
+    "banner_1_2": "Design",
+    "banner_2": "Individual",
+    "banner_2_2": "Approach",
+    "banner_3": "Professional",
+    "banner_3_2": "Development",
+    "calculate_banner": "CALCULATE YOUR PROJECT",
+    "calculate_card": {
+      "deadline": "Time ",
+      "from": "from ",
+      "days": "days",
+      "price": "Price ",
+      "order": "Order"
+    },
+    "project_block": {
+      "header": "Our Projects",
+      "text": "Our agency has vast experience in full cycle development of websites, online stores, landing pages and chat bots. We put our hearts into our projects and we do it by the highest professional standarts."
+    },
+    "project_1": {
+      "header": "“Sabai Thai Spa” Website",
+      "text": "The Design Layout creation from scratch with further realisation on Tilda."
+    },
+    "project_2": {
+      "header": "Telegram Advertising platform website",
+      "text": "The Design Layout creation from scratch."
+    },
+    "project_3": {
+      "header": "lcardio” Website",
+      "text": "The Design Layout creation from scratch with further in-code realisation."
+    },
+    "project_4": {
+      "header": "“SP Cargo” Website",
+      "text": "The Design Layout creation from scratch with further in-code realisation."
+    },
+    "form_button": "SEND US THE REQUEST",
+    "form_service_paceholder": "Select the service (or few)",
+    "form_service": ["Development", "Design", "Landing Page", "Online Store", "Corporate Website", "Brand Identity"],
+    "form_name_placeholder": "Your name",
+    "form_desc_placeholder": "Describe your project",
+    "form_contact_placeholder": "Choose ways of communication",
+    "form_contact": ["Phone"],
+    "form_file_1": "Choose the file ",
+    "form_file_2": "or drag it over here",
+    "form_agreement_1": "I am agreed with ",
+    "form_agreement_2": "terms of use",
+    "form_send_button": "Send",
+    "services_block": "Our services",
+    "dev_block": {
+      "header": "Development",
+      "text": "There are no impossible tasks for our front-end and back-end developers. Close communication with designers and marketing specialists on all stages of the project will guarantee its immacualte operation, while sacred attitude to the deadlines will save your time and nerves."
+    },
+    "dev_web": {
+      "header": "Website",
+      "text": "We create classy and high-quality websites of any kind. We are ready to bring to life your most ambitious ideas, from simple projects on Tilda and WordPress to enterprise-grade microservice web-applications."
+    },
+    "dev_mobile": {
+      "header": "Mobile application",
+      "text": "Our mobile applications are fusion of the design and technologies, which is born in many hours of thorough work of our team. We will create it for any exisiting platform basing on the requirements of your audience, to help you reach out to it through the screens of their smartphones."
+    },
+    "dev_bot": {
+      "header": "Chat bot",
+      "text": "Interactive and convenient chat bot will provide your customers a new experience of interacting with your product without pushing them to leave cozy social media environment. Modern technologies of bots development allow to create a wide variety of different solutions basing on it: from customer support services to quest games and online stores."
+    },
+    "dev_landing": {
+      "header": "Landing page",
+      "text": "Bright and informative one-page website is a great way to raise interest to your product quickly. Our developers know how to make it quick and adaptive while designers make sure that your clients would never forget it."
+    },
+    "dev_support": {
+      "header": "Support",
+      "text": "We guarantee excelent operation of our products but even if something goes wrong, our specialists are always ready to fix any occured problem or advise you on any issue. You have come up with a new idea and project's functionality is needed to be enhanced? We will always be happy to take part in its further evolution."
+    },
+    "des_block": {
+      "header": "Design",
+      "text": "Our designers use various UX-research methods to customize your product for needs of your audience as much as possible. And many years of expereince and natural born sense of beauty to make the product stylish."
+    },
+    "des_ux": {
+      "header": "UX",
+      "text": "The key factor of your project's success is the appropriate structure. Our team is ready to create a primary functional design based on well-known patterns of convenient navigation. Each our UX-design project hides multiple stages of testing and research beneath it. It ensures that clients will be completely satisfied by the project."
+    },
+    "des_ui": {
+      "header": "UI",
+      "text": "Our designers have discovered the mystery of balance between aesthetics and usability of the interfaces. That allows them to create design projects of websites and apps which do not leave anyone untouched for many years."
+    },
+    "des_graph": {
+      "header": "Graphical design",
+      "text": "The unique graphical implementation is a very important aspect of recognizability and memoarbility of your project. Our specialists will create logo and fonts considering tiniest details of your project's features and your personal desires."
+    },
+    "about_block": {
+      "header": "About us",
+      "text": "We are small and solid team which is ready to accept the most serious challenges of our clients. You choose warranty of quick and quality realisation of your projects choosing us."
+    },
+    "about_button": "Find out more about us"
+  },
+  "contact": {
+    "title": "Contacts",
+    "seo": {
+      "keywords": "website development",
+      "desc": "JARM Web Solutions contacts"
+    },
+    "header": "Contacts",
+    "phone": "Phone",
+    "contacts": ["E-mail", "Telegram", "Vkontakte", "Behance"]
+  },
+  "job": {
+    "title": "Careers",
+    "seo": {
+      "keywords": "website development",
+      "desc": "JARM Web Solutions careers"
+    },
+    "header": "Job openings",
+    "button_respond": "Respond",
+    "jobs": [{
+        "header": "Developer",
+        "text": "Lorem ipsum"
+      },
+      {
+        "header": "DevOps Engineer",
+        "text": "Dolores est"
+      },
+      {
+        "header": "Designer",
+        "text": "Lores Designes"
+      }
+    ]
+  },
+  "applyjob": {
+  "title": "Contact us",
+  "header": "Introduce yourself",
+  "form_name_header": "Your name",
+  "form_name_placeholder": "John Smith",
+  "form_city_header": "Residence",
+  "form_city_placeholder": "Moscow city",
+  "form_contact_header": "How may we communicate with you?",
+  "form_contact_placeholder": "Choose ways of communication",
+  "form_contact": ["Phone"],
+  "form_file_1": "Select your CV ",
+  "form_file_2": "or drag it over here",
+  "form_agreement_1": "I am agreed with ",
+  "form_agreement_2": "terms of data collection",
+  "form_send_button": "Submit"
+},
+"error": {
+  "title": "Error",
+  "label_1": "An error has been occured",
+  "label_2": "Something had gone wrong during the form submission",
+  "label_3": "Try again!",
+  "label_4": "Return"
+},
+"successform": {
+  "title": "Request has been sent",
+  "label_1": "Your request has been successfully sent",
+  "label_2": "Our specialists are studying your request right now and will contact you as soon as possible!",
+  "label_3": "Thanks for your trust!",
+  "label_4": "Return"
+},
+"successcv": {
+  "title": "Request has been sent",
+  "label_1": "Your CV has been successfully sent",
+  "label_2": "We will study your CV and send you a feedback within 5 days.",
+  "label_3": "Thanks!",
+  "label_4": "Return"
+},
+"about": {
+  "title": "About us",
+  "seo": {
+    "keywords": "website development",
+    "desc": "About JARM Web Solutions"
+  },
+  "about_block": {
+    "header": "About us",
+    "text": "We are small and solid team which is ready to accept the most serious challenges of our clients. You choose warranty of quick and quality realisation of your projects choosing us."
+  },
+  "about_pics_header": "We guarantee",
+  "about_pics": ["Result", "Individual Approach", "Punctuallity"],
+  "about_map_header": "How do we work?",
+  "about_map": [{
+    "header": "Meeting",
+    "text": "Fifteen minutes of face-to-face conversation can clarify more questions than three days of correspondence. During the initial negotiations we will dive into the nature of your project, determine its preliminary structure, as well as the budget and deadlines. We will be glad to meet you in the virtual space using any comfortable for you communication platform."
+  },
+  {
+    "header": "Contract signing",
+    "text": "An agreement containing the basic terms of our partnership will help to increase our mutual trust and confidence in each other. You can view the sample agreement clicking the ",
+    "url": "/docs/dog-en.pdf",
+    "link": "link"
+  },
+  {
+    "header": "Technical specification",
+    "text": "A detailed and organized description of all the details of the future project is the key to its success. We will help you to turn all the scattered wishes into a clear action plan and determine all the nuances, relying on our many years of experience in creating IT-solutions."
+  },
+  {
+    "header": "UX-protoypes and design layouts",
+    "text": "The mission of the UX prototypes is to determine the location of all blocks and elements in the project's user interfaces, as well as to specify the navigation routes between them. After working through the structure, we'll add some colors and style to the prototypes. We will approve the palette, fonts and interface elements created in perfect accordance with all the principles of UI design, and develop the layouts - the final visual implementation of the future product."
+  },
+  {
+    "header": "Fixes",
+    "text": "We are well aware that the complete list of the functionality of the project is not formed immediately after the start of the development, and the exact vision of how the design should look is formed after the first or even second iteration of the layouts. This is why we are ready to make changes after discussions within reasonable limits, free of charge. In unreasonable limits too, but for money — according to the terms agreed upon at the beginning of our cooperation."
+  },
+  {
+    "header": "Techincal implementation",
+    "text": "After a final approval of all prototypes and layouts, it's just a question of technical implementation. Our developers will assemble and test the project, ensure its speed and perfect operation on all devices."
+  },
+  {
+    "header": "Приём работ",
+    "text": "We will have to overshadow this important moment by the necessary routine - we will tell and show you how to use the project and manage its content, hand over the manual and all other documentation."
+  },
+  {
+    "header": "Support",
+    "text": "We never leave our customers alone in the stormy sea of Internet technologies. Our specialists are always ready to come and give you a hand, providing advice on any issue or troubleshooting. In addition, we are happy to help with project promotion or social media management."
+  }],
+  "form_button": "Let's try!"
+}
+}

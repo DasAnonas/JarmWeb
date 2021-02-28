@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="/css/dropdown.css">
+<title><%= text.title %></title>
+</head>
+
+<body>
+
+<%- include('./parts/header') -%>
+
+<div id="wrapper" class="main container-fluid">
+  <div id="fader">
+  </div>
+  <div id="contact-header" class="row justify-content-center align-items-center">
+    <div class="col-12 col-lg-8 col-xl-8 px-0 px-mobile" style="text-align:left">
+      <h1 class="text-big"><%= text.header %></h1>
+    </div>
+  </div>
+  <div id="contact-phone" class="row justify-content-center align-items-center" style="padding-top:4em;">
+    <div class="col-12 col-lg-8 col-xl-8 px-0 px-mobile" style="text-align:left">
+      <h2 class="portfolio-header text-big"><%= text.phone %></h2></br>
+      <a href="tel:"><h4 class=" portfolio-text-sm text-big">+7 (495) 550-45-23</h4></br></a>
+      <a href="tel:"><h4 class=" portfolio-text-sm text-big">+7 (965) 565-32-45</h4></br></a>
+    </div>
+  </div>
+  <div id="contact-buttons" class="row justify-content-center align-items-center" style="padding-top:5em;">
+    <div class="col-10 col-xl-8 px-0" style="text-align:left">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="" target="_blank"><button class="button-contact portfolio-header text-big"><%= text.contacts[0] %></button></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="" target="_blank"><button class="button-contact portfolio-header text-big"><%= text.contacts[1] %></button></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="" target="_blank"><button class="button-contact portfolio-header text-big"><%= text.contacts[2] %></button></a>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <a href="" target="_blank"><button class="button-contact portfolio-header text-big">WhatsApp</button></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="contact-buttons-mobile" class="row justify-content-center" style="padding-top: 1rem; padding-bottom: 4rem;">
+    <div class="col-7 col-md-5" style="margin-bottom:2.5rem;">
+      <a href=""><img src="/images/tg-mobile.svg" style="width: 100%"></a>
+      </div>
+      <div class="col-7 col-md-5" style="margin-bottom:2.5rem;">
+        <a href=""><img src="/images/whats-mobile.svg" style="width: 100%"></a>
+        </div>
+        <div class="col-7 col-md-5" style="margin-bottom:2.5rem;">
+          <a href=""><img src="/images/vk-mobile.svg" style="width: 100%"></a>
+          </div>
+          <div class="col-7 col-md-5" style="margin-bottom:2.5rem;">
+            <a href=""><img src="/images/mail-mobile.svg" style="width: 100%"></a>
+            </div>
+    </div>
+
+</div>
+<%- include('./parts/footer') -%>
+
+<script>
+$(document).ready(function() {
+let height = $('#footer').height() + $('#header').height()
+$('#wrapper').css('min-height', 'calc(100vh - '+height+'px )')
+})
+$("#footer").change('height', function() {
+let height = $('#footer').height() + $('#header').height()
+$('#wrapper').css('min-height', 'calc(100vh - '+height+'px )')
+})
+</script>

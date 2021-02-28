@@ -1,0 +1,312 @@
+<link rel="stylesheet" href="/css/dropdown.css">
+<title><%= text.title %></title>
+</head>
+
+<body>
+
+
+  <%- include('./parts/header') -%>
+
+  <div class="main container-fluid">
+    <div id="fader">
+    </div>
+    <img src="/images/flag-uk.svg" alt="JARM Web Solutions" style="display:none;">
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-7 col-11 col-lg-8 col-xl-8 px-0" style="text-align:left">
+        <div class="row justify-content-start align-items-center">
+          <div class="col-12 px-0 px-mobile" style="text-align:left">
+            <h1 class="text-big"><%= text.about_block.header %></h1>
+          </div>
+        </div>
+        <div class="row justify-content-start align-items-center">
+          <div id="about-text" class="col-12 col-lg-7 px-0 px-mobile" style="text-align:left; padding-top: 3em;">
+            <h4 class="text-small" style="margin-top:-10px; margin-bottom:0;"><%= text.about_block.text %></h4>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div class="col-md-7 col-11 col-lg-8 col-xl-8 px-0" style="text-align:center">
+        <h2 class="about-pics-header"><%= text.about_pics_header %></h1>
+      </div>
+    </div>
+    <div class="row justify-content-center align-items-center" style="padding-top: 4rem;">
+      <div class="col-md-8 col-8 col-lg-8 col-xl-8 px-0" style="text-align:center">
+        <div class="row justify-content-center">
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4">
+            <img src="/images/about-pics-1.svg" style="width: 80%">
+            <h3 class="about-pics-text"><%= text.about_pics[0] %></h3>
+          </div>
+          <div class="col-6 col-md-6 col-lg-4 col-xl-4">
+            <img src="/images/about-pics-2.svg" style="width: 80%">
+            <h3 class="about-pics-text"><%= text.about_pics[1] %></h3>
+          </div>
+          <div id="about-pic-3" class="col-6 col-md-6 col-lg-4 col-xl-4">
+            <img src="/images/about-pics-3.svg" style="width: 80%">
+            <h3 class="about-pics-text"><%= text.about_pics[2] %></h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about_map_header" class="row justify-content-center align-items-center" style="padding-top: 4.5em">
+      <div class="col-md-12 col-12 col-lg-8 col-xl-8 px-0 px-mobile" style="text-align:left">
+        <h1 class="text-big"><%= text.about_map_header %></h1>
+      </div>
+    </div>
+    <div id="about_map" class="row justify-content-center align-items-center" style="padding-top: 0.5em">
+      <div class="col-md-7 col-11 col-lg-8 col-xl-8 px-0">
+        <div class="row justify-content-start map-row">
+          <div class="col-12 px-0" style="text-align: start; margin-bottom: 2rem;">
+            <span class="text-big map-number">01</span>
+            <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 2.5rem;"><%= text.about_map[0].header %></span>
+          </div>
+          <div class="col-5 px-0" style="text-align: start">
+            <img src="/images/about-map-1.svg" style="width: 60%">
+          </div>
+          <div class="col-7 px-0 map-description py-auto" style="text-align: center">
+            <h4 id="map-text-1" class="text-small map-description-text"><%= text.about_map[0].text %></h4>
+          </div>
+        </div>
+        <div class="row justify-content-start map-row">
+          <div class="col-12 px-0" style="text-align: end; margin-bottom: 2rem;">
+            <span class="text-big map-number">02</span>
+            <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 2.5rem;"><%= text.about_map[1].header %></span>
+          </div>
+          <div class="col-7 px-0 map-description py-auto" style="text-align: center">
+            <h4 id="map-text-2" class="text-small map-description-text"><%= text.about_map[1].text %> <a href="<%= text.about_map[1].url %>"><%= text.about_map[1].link %></a></h4>
+          </div>
+          <div class="col-5 px-0" style="text-align: end">
+            <img src="/images/about-map-2.svg" style="width: 60%">
+          </div>
+        </div>
+        <div class="row justify-content-start map-row">
+          <div class="col-12 px-0" style="text-align: start; margin-bottom: 2rem;">
+            <span class="text-big map-number">03</span>
+            <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 2.5rem;"><%= text.about_map[2].header %></span>
+          </div>
+          <div class="col-5 px-0" style="text-align: start">
+            <img src="/images/about-map-3.svg" style="width: 60%">
+          </div>
+          <div class="col-7 px-0 map-description py-auto" style="text-align: center">
+            <h4 id="map-text-3" class="text-small map-description-text"><%= text.about_map[2].text %></h4>
+          </div>
+        </div>
+        <div class="row justify-content-start map-row">
+          <div class="col-12 px-0" style="text-align: end; margin-bottom: 2rem;">
+            <span class="text-big map-number">04</span>
+            <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 2.5rem;"><%= text.about_map[3].header %></span>
+          </div>
+          <div class="col-7 px-0 map-description py-auto" style="text-align: center">
+            <h4 id="map-text-4" class="text-small map-description-text"><%= text.about_map[3].text %></h4>
+          </div>
+          <div class="col-5 px-0" style="text-align: end">
+            <img src="/images/about-map-4.svg" style="width: 60%">
+          </div>
+        </div>
+        <div class="row justify-content-start map-row">
+          <div class="col-12 px-0" style="text-align: start; margin-bottom: 2rem;">
+            <span class="text-big map-number">05</span>
+            <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 2.5rem;"><%= text.about_map[4].header %></span>
+          </div>
+          <div class="col-5 px-0" style="text-align: start">
+            <img src="/images/about-map-5.svg" style="width: 60%">
+          </div>
+          <div class="col-7 px-0 map-description py-auto" style="text-align: center">
+            <h4 id="map-text-5" class="text-small map-description-text"><%= text.about_map[4].text %></h4>
+          </div>
+        </div>
+        <div class="row justify-content-start map-row">
+          <div class="col-12 px-0" style="text-align: end; margin-bottom: 2rem;">
+            <span class="text-big map-number">06</span>
+            <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 2.5rem;"><%= text.about_map[5].header %></span>
+          </div>
+          <div class="col-7 px-0 map-description py-auto" style="text-align: center">
+            <h4 id="map-text-6" class="text-small map-description-text"><%= text.about_map[5].text %></h4>
+          </div>
+          <div class="col-5 px-0" style="text-align: end">
+            <img src="/images/about-map-6.svg" style="width: 60%">
+          </div>
+        </div>
+        <div class="row justify-content-start map-row">
+          <div class="col-12 px-0" style="text-align: start; margin-bottom: 2rem;">
+            <span class="text-big map-number">07</span>
+            <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 2.5rem;"><%= text.about_map[6].header %></span>
+          </div>
+          <div class="col-5 px-0" style="text-align: start">
+            <img src="/images/about-map-7.svg" style="width: 60%">
+          </div>
+          <div class="col-7 px-0 map-description py-auto" style="text-align: center">
+            <h4 id="map-text-7" class="text-small map-description-text"><%= text.about_map[6].text %></h4>
+          </div>
+        </div>
+        <div class="row justify-content-start map-row">
+          <div class="col-12 px-0" style="text-align: end; margin-bottom: 2rem;">
+            <span class="text-big map-number">08</span>
+            <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 2.5rem;"><%= text.about_map[7].header %></span>
+          </div>
+          <div class="col-7 px-0 map-description py-auto" style="text-align: center">
+            <h4 id="map-text-8" class="text-small map-description-text"><%= text.about_map[7].text %></h4>
+          </div>
+          <div class="col-5 px-0" style="text-align: end">
+            <img src="/images/about-map-8.svg" style="width: 60%">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="about-map-mobile" class="row justify-content-center">
+      <div class="col-12">
+        <div id="map-mobile-carousel" class="carousel slide" data-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active" number="1">
+              <div class="row justify-content-center">
+                <div class="col-12" style="text-align: center; padding-bottom: 0.9rem;">
+                  <span class="text-big map-number">01</span>
+                  <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 0.5rem;"><%= text.about_map[0].header %></span>
+                  </div>
+                <div class="col-5 col-md-4 px-0">
+                  <img src="/images/about-map-1.svg" style="width: 100%">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item" number="2">
+              <div class="row justify-content-center">
+                <div class="col-12" style="text-align: center; padding-bottom: 0.9rem;">
+                  <span class="text-big map-number">02</span>
+                  <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 0.5rem;"><%= text.about_map[1].header %></span>
+                  </div>
+                <div class="col-5 col-md-4 px-0">
+                  <img src="/images/about-map-2.svg" style="width: 100%">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item" number="3">
+              <div class="row justify-content-center">
+                <div class="col-12" style="text-align: center; padding-bottom: 0.9rem;">
+                  <span class="text-big map-number">03</span>
+                  <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 0.5rem;"><%= text.about_map[2].header %></span>
+                  </div>
+                <div class="col-5 col-md-4 px-0">
+                  <img src="/images/about-map-3.svg" style="width: 100%">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item" number="4">
+              <div class="row justify-content-center">
+                <div class="col-12" style="text-align: center; padding-bottom: 0.9rem;">
+                  <span class="text-big map-number">04</span>
+                  <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 0.5rem;"><%= text.about_map[3].header %></span>
+                  </div>
+                <div class="col-5 col-md-4 px-0">
+                  <img src="/images/about-map-4.svg" style="width: 100%">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item" number="5">
+              <div class="row justify-content-center">
+                <div class="col-12" style="text-align: center; padding-bottom: 0.9rem;">
+                  <span class="text-big map-number">05</span>
+                  <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 0.5rem;"><%= text.about_map[4].header %></span>
+                  </div>
+                <div class="col-5 col-md-4 px-0">
+                  <img src="/images/about-map-5.svg" style="width: 100%">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item" number="6">
+              <div class="row justify-content-center">
+                <div class="col-12" style="text-align: center; padding-bottom: 0.9rem;">
+                  <span class="text-big map-number">06</span>
+                  <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 0.5rem;"><%= text.about_map[5].header %></span>
+                  </div>
+                <div class="col-5 col-md-4 px-0">
+                  <img src="/images/about-map-6.svg" style="width: 100%">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item" number="7">
+              <div class="row justify-content-center">
+                <div class="col-12" style="text-align: center; padding-bottom: 0.9rem;">
+                  <span class="text-big map-number">07</span>
+                  <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 0.5rem;"><%= text.about_map[6].header %></span>
+                  </div>
+                <div class="col-5 col-md-4 px-0">
+                  <img src="/images/about-map-7.svg" style="width: 100%">
+                  </div>
+                </div>
+            </div>
+            <div class="carousel-item" number="8">
+              <div class="row justify-content-center">
+                <div class="col-12" style="text-align: center; padding-bottom: 0.9rem;">
+                  <span class="text-big map-number">08</span>
+                  <span class="about-pics-header" style="font-weight: 400; text-align: start; margin-left: 0.5rem;"><%= text.about_map[7].header %></span>
+                  </div>
+                <div class="col-5 col-md-4 px-0">
+                  <img src="/images/about-map-8.svg" style="width: 100%">
+                  </div>
+                </div>
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#map-mobile-carousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#map-mobile-carousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+      <div class="col-12" style="min-height: 80px; margin-top: 1rem;">
+        <h4 class="text-small map-description-text map-description" style="min-height: 80px"><span id="map-text-mobile"><%= text.about_map[0].text %></span></h4>
+        </div>
+        <div class="col-12" style="text-align:center; padding-top:1.5rem;">
+          <label class="slider-indicator slider-indicator-active" number="1"></label>
+          <label class="slider-indicator" number="2"></label>
+          <label class="slider-indicator" number="3"></label>
+          <label class="slider-indicator" number="4"></label>
+          <label class="slider-indicator" number="5"></label>
+          <label class="slider-indicator" number="6"></label>
+          <label class="slider-indicator" number="7"></label>
+          <label class="slider-indicator" number="8"></label>
+          </div>
+    </div>
+    <div id="feedback-button-wrap" class="row justify-content-center align-items-center" style="padding-top:5em; padding-bottom: 4.5em;">
+      <div class="col-11 col-md-7 col-lg-7 col-xl-5 " style="text-align:center">
+        <button class="glow-white-button feedback-button" data-toggle="modal" data-target="#feedback"><%= text.form_button %></button>
+      </div>
+    </div>
+
+  </div>
+
+
+  <%- include('./parts/footer') -%>
+
+  <script>
+    $('.carousel').carousel({
+      interval: false
+    })
+    $('#map-mobile-carousel').on('slide.bs.carousel', function() {
+    const num = parseInt($('.carousel-item.active').attr("number"))
+    setTimeout( function() {
+      let nextNum = parseInt($('.carousel-item-next').attr("number"))
+      if (!nextNum) {
+        nextNum = parseInt($('.carousel-item-prev').attr("number"))
+      }
+      $('#map-text-mobile').animate({
+        opacity: "0"
+      }, 200)
+      setTimeout( function() {
+      $('#map-text-mobile').html($('#map-text-' + nextNum.toString()).html())
+      $('#map-text-mobile').animate({
+        opacity: "1"
+      }, 200)
+    }, 200)
+      $('.slider-indicator:nth-child(' + num.toString() + ')').toggleClass('slider-indicator-active')
+      $('.slider-indicator:nth-child(' + nextNum.toString() + ')').toggleClass('slider-indicator-active')
+  }, 2)
+    })
+    $('.slider-indicator').on('click', function(){
+      $('#map-mobile-carousel').carousel(parseInt($(this).attr('number')) - 1)
+    })
+
+  </script>

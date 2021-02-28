@@ -1,0 +1,30 @@
+.ms-choice {
+  background: #E1EDF8;
+  border-radius: 5px;
+  color: #000;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  padding-top:9%;
+}
+
+.ms-choice>span {
+  top: 20%;
+  left: 3px;
+}
+
+.icon-caret {
+  border-color: #093763 transparent transparent transparent !important;
+  top: 10%;
+}
+
+.icon-caret.open {
+  border-color: transparent transparent #093763 transparent !important;
+  top: 10%;
+}
+.placeholder {
+  color: #9F9F9F !important;
+}
+.ms-parent {
+  width: 95% !important;
+  margin-top: 2%;
+}

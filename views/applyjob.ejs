@@ -1,0 +1,93 @@
+<link rel="stylesheet" href="/css/dropdown-white.css">
+<title><%= text.title %></title>
+</head>
+
+<body>
+
+  <%- include('./parts/header-cv') -%>
+
+  <div id="wrapper" class="main container-fluid">
+    <div id="fader">
+    </div>
+    <div class="row justify-content-center align-items-center">
+      <div id="applyjob-header" class="col-12 col-xl-8 px-0 px-mobile" style="text-align:left">
+        <h1 class="text-big"><%= text.header %></h1>
+      </div>
+    </div>
+    <div id="applyjob-form-wrap" class="row justify-content-center align-items-center" style="padding-top:4em; padding-bottom: 4em;">
+      <div class="col-xl-8 col-12 px-0 px-mobile">
+        <form action="/sendcv" method="post" onsubmit="return validateForm()" enctype="multipart/form-data">
+          <input type="hidden" name="vacancy_id" value="<%= id %>">
+          <input type="hidden" name="lang" value="<%= lang %>">
+          <input type="text" id="desc_2" name="desc_2" class="text-input" placeholder="<%= text.form_name_placeholder %>" autocomplete="off">
+          <div class="row justify-content-start align-items-center">
+            <div class="col-lg-12 col-xl-8">
+          <div id="form-row-1" class="row justify-content-start align-items-center" style="margin-bottom:2.5em;">
+            <div id="form-row-2" class="col-xl-6 col-lg-6 col-md-7" style="margin-bottom:0.5em">
+              <span class="form-label"><%= text.form_name_header %></span>
+              <input type="text" name="name" id="name" class="text-input-job validable" placeholder="<%= text.form_name_placeholder %>" autocomplete="off">
+            </div>
+            <div id="form-row-3" class="col-xl-6 col-lg-6 col-md-7" style="margin-bottom:0.5em">
+              <span class="form-label"><%= text.form_city_header %></span>
+              <input type="text" name="city" id="city" class="text-input-job validable" placeholder="<%= text.form_city_placeholder %>" autocomplete="off">
+            </div>
+          </div>
+          <div id="form-row-4" class="row justify-content-start align-items-center" style="margin-bottom: 1.5em">
+            <div class="col-xl-6 col-lg-6 col-md-7">
+              <span class="form-label"><%= text.form_contact_header %></span>
+              <select id="contact" name="contact" multiple="multiple" placeholder="<%= text.form_contact_placeholder %>">
+                <option value="mail">E-mail</option>
+                <option value="phone"><%= text.form_contact[0] %></option>
+                <option value="tg">Telegram</option>
+                <option value="whatsapp">WhatsApp</option>
+              </select>
+            </div>
+          </div>
+          <div class="row justify-content-start align-items-center" style="">
+            <div class="col-xl-6 col-lg-6 col-md-7 contact-wrap" id="mail">
+              <span class="form-label">E-mail</span>
+              <input type="text" name="mail" id="mail-input" class="text-input validable" placeholder="jarm@jarm-web.com" autocomplete="off">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-7 contact-wrap" id="phone">
+              <span class="form-label"><%= text.form_contact[0] %></span>
+              <input type="text" name="phone" id="phone-input" class="text-input validable" placeholder="+79001234567" autocomplete="off">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-7 contact-wrap" id="tg">
+              <span class="form-label">Telegram</span>
+              <input type="text" name="tg" id="tg-input" class="text-input validable" placeholder="+79001234567 / @jarm-official" autocomplete="off">
+            </div>
+            <div class="col-xl-6 col-lg-6 col-md-7 contact-wrap" id="whatsapp">
+              <span class="form-label">WhatsApp</span>
+              <input type="text" name="whatsapp" id="whatsapp-input" class="text-input validable" placeholder="+79001234567" autocomplete="off">
+            </div>
+          </div>
+          <div id="form-row-5" class="row justify-content-start align-items-center" style="margin-bottom: 0.75em; margin-top: 1.5em;">
+            <div class="col-xl-6 col-lg-6 col-md-7 col-7">
+              <div class="drop" id="drop">
+                <input type="file" name="file" id="file" class="file-input validable">
+                <label for="file"><%= text.form_file_1 %><span style="color: #B4B4B4;"><%= text.form_file_2 %></span></label>
+              </div>
+            </div>
+          </div>
+          <div id="form-row-6" class="row justify-content-start align-items-center" style="margin-top: 4em; ">
+            <div class="col-xl-6 col-lg-6">
+              <input type="checkbox" name="agree" id="agree" class="custom-checkbox-dark validable" checked> <label for="agree" class="form-label" style="font-size: 0.7rem"><%= text.form_agreement_1 %><a href="/" style="color: inherit; text-decoration: underline">
+                  <%= text.form_agreement_2 %></a></label>
+            </div>
+          </div>
+          <div id="form-row-7" class="row justify-content-start align-items-center" style="margin-bottom: 4em; ">
+            <div id="form-row-8" class="col-xl-6 col-lg-6">
+              <button type="submit" id="submit" class="orange-button portfolio-header text-big text-sm button-disabled" style="font-size:1.2rem; margin-top: 2.5%;"><%= text.form_send_button %></button>
+            </div>
+          </div>
+        </div>
+        </div>
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+  <%- include('./parts/footer-cv') -%>
+
+  <script src="/js/job_form.js">

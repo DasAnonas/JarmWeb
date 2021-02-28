@@ -1,0 +1,171 @@
+<div id="header" class="header">
+  <div class="container-fluid">
+    <div class="row align-items-center justify-content-center">
+      <div class="col-xl col-lg col-md-12" style="text-align: center">
+        <a href="/<%= link %>"><img class="logo logo-jarm" src="/images/logo.svg" alt="JARM Web Solutions"></a>
+      </div>
+      <div class="col-lg-9 col-xl-8 col-md-10 offset-xl-1 offset-lg-0">
+        <nav class="navbar navbar-expand-lg navbar-light mx-auto justify-content-center">
+          <button class="navbar-toggler navbar-mobile-toggler" type="button" id="navbar-mobile-toggler" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Меню">
+            <div class="icon nav-icon-5">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+              <li class="nav-item navitem">
+                <a class="nav-link hover hover-underline" href="/<%= link %>#portfolio"><%= text_header.portfolio %></a>
+              </li>
+              <li class="nav-item navitem">
+                <a class="nav-link hover hover-underline" href="/<%= link %>#services"><%= text_header.services %></a>
+              </li>
+              <li class="nav-item navitem">
+                <a class="nav-link hover hover-underline" href="/about<%= link %>"><%= text_header.about %></a>
+              </li>
+              <li class="nav-item navitem">
+                <a class="nav-link hover hover-underline" href="/contacts<%= link %>"><%= text_header.contacts %></a>
+              </li>
+              <li class="nav-item navitem">
+                <a class="nav-link hover hover-underline" href="/job<%= link %>"><%= text_header.job %></a>
+              </li>
+            </ul>
+            <% if (lang == "ru") { %>
+            <a href="/?lang=en" class="logo flag flag-<%= lang %>"></a>
+            <% } else {%>
+            <a href="/?lang=ru" class="logo flag flag-<%= lang %>"></a>
+            <% } %>
+          </div>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+<div id="header-mobile">
+  <div id="navbar-mobile">
+    <svg class="navbar-mobile-toggler" width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21.5 2.615L19.385 0.5L11 8.885L2.615 0.5L0.5 2.615L8.885 11L0.5 19.385L2.615 21.5L11 13.115L19.385 21.5L21.5 19.385L13.115 11L21.5 2.615Z" fill="#093763" />
+    </svg>
+    </br></br>
+    <a class="nav-link inner-link" href="/<%= link %>#portfolio"><%= text_header.portfolio %></a>
+    </br>
+    <a class="nav-link inner-link" href="/<%= link %>#services-mobile"><%= text_header.services %></a>
+    </br>
+    <a class="nav-link" href="/about<%= link %>"><%= text_header.about %></a>
+    </br>
+    <a class="nav-link" href="/contacts<%= link %>"><%= text_header.contacts %></a>
+    </br>
+    <a class="nav-link" href="/job<%= link %>"><%= text_header.job %></a>
+    </br>
+    <% if (lang == "ru") { %>
+    <a href="/?lang=en"><div style="height:36px; width:36px;" class="logo flag flag-<%= lang %>"></div></a>
+    <% } else {%>
+    <a href="/?lang=ru"><div style="height:36px; width:36px;" class="logo flag flag-<%= lang %>"></div></a>
+    <% } %>
+  </div>
+  <div class="container-fluid">
+  <div class="row justify-content-center" style="padding-top:5%">
+    <div class="col my-auto" style='text-align:start'>
+      <img class="navbar-mobile-toggler" src="/images/burger.svg" alt="Menu">
+      </div>
+      <div class="col my-auto" style='text-align:center'>
+        <a href="/"><img style="width:45vw" src="/images/logo-mobile.svg" alt="JARM"></a>
+        </div>
+        <div class="col my-auto" style='text-align:end'>
+          <img src="/images/contact-mobile.svg" alt="JARM" data-toggle="modal" data-target="#feedback">
+          </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="feedback" tabindex="-1" role="dialog" aria-labelledby="Свяжитесь с нами" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true" class="button-close">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <div class="row justify-content-start align-items-center">
+            <div class="col-xl-10 col-lg-7 col-md-10">
+              <form action="/sendform" method="post" onsubmit="return validateForm('-modal')" enctype="multipart/form-data">
+                <input type="hidden" name="lang" value=<%= lang %>>
+                <input type="text" id="desc_2_modal" name="desc_2" class="text-input" placeholder="<%= text_header.form_name_placeholder %>" autocomplete="off">
+                <div class="row justify-content-start align-items-center modal-row">
+                  <div class="col-xl-6 col-lg-12">
+                    <select id="service-modal" name="service" multiple="multiple" placeholder="<%= text_header.form_service_paceholder %>">
+                      <option value="dev"><%= text_header.form_service[0] %></option>
+                      <option value="des"><%= text_header.form_service[1] %></option>
+                      <option value="land"><%= text_header.form_service[2] %></option>
+                      <option value="store"><%= text_header.form_service[3] %></option>
+                      <option value="corp"><%= text_header.form_service[4] %></option>
+                      <option value="style"><%= text_header.form_service[5] %></option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row justify-content-start align-items-center modal-row">
+                  <div class="col-xl-6 col-lg-12">
+                    <input type="text" id="name-modal" name="name" class="text-input validable-modal" placeholder="<%= text_header.form_name_placeholder %>" autocomplete="off">
+                  </div>
+                </div>
+                <div class="row justify-content-start align-items-center modal-row">
+                  <div class="col-xl-6 col-lg-12">
+                    <textarea id="desc-modal" name="desc" class="map-description-text map-description" rows="3" placeholder="<%= text_header.form_desc_placeholder %>" autocomplete="off"></textarea>
+                  </div>
+                </div>
+                <div class="row justify-content-start align-items-center" style="margin-bottom: 1.5em">
+                  <div class="col-xl-6 col-lg-12">
+                    <select id="contact-modal" name="contact" multiple="multiple" placeholder="<%= text_header.form_contact_placeholder %>">
+                      <option value="mail-modal">E-mail</option>
+                      <option value="phone-modal"><%= text_header.form_contact[0] %></option>
+                      <option value="tg-modal">Telegram</option>
+                      <option value="whatsapp-modal">WhatsApp</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="row justify-content-start align-items-center" style="">
+                  <div class="col-xl-6 col-lg-12 contact-wrap" id="mail-modal">
+                    <span class="form-label">E-mail</span>
+                    <input type="text" id="mail-input-modal" name="mail" class="text-input validable-modal" placeholder="jarm@jarm-web.com" autocomplete="off">
+                  </div>
+                  <div class="col-xl-6 col-lg-12 contact-wrap" id="phone-modal">
+                    <span class="form-label"><%= text_header.form_contact[0] %></span>
+                    <input type="text" id="phone-input-modal" name="phone" class="text-input validable-modal" placeholder="+79001234567" autocomplete="off">
+                  </div>
+                  <div class="col-xl-6 col-lg-12 contact-wrap" id="tg-modal">
+                    <span class="form-label">Telegram</span>
+                    <input type="text" id="tg-input-modal" name="tg" class="text-input validable-modal" placeholder="+79001234567 / @jarm-official" autocomplete="off">
+                  </div>
+                  <div class="col-xl-6 col-lg-12 contact-wrap" id="whatsapp-modal">
+                    <span class="form-label">WhatsApp</span>
+                    <input type="text" id="whatsapp-input-modal" name="whatsapp" class="text-input validable-modal" placeholder="+79001234567" autocomplete="off">
+                  </div>
+                </div>
+                <div class="row justify-content-start align-items-center" style="margin-bottom: 4.5em; margin-top: 1.5em;">
+                  <div class="col-xl-7 col-lg-12">
+                    <div class="drop" id="drop_modal">
+                      <input type="file" name="file" id="file_modal" class="file-input" data-multiple-caption="{count} уже выбрано" multiple>
+                      <label for="file_modal"><%= text_header.form_file_1 %><span style="color: #B4B4B4;"><%= text_header.form_file_2 %></span></label>
+                    </div>
+                  </div>
+                </div>
+                <div class="row justify-content-start align-items-center">
+                  <div class="col-xl-6 col-lg-12">
+                    <input type="checkbox" name="agree" id="agree-modal" class="custom-checkbox-dark validable-modal" checked><label for="agree" class="form-label" style="font-size: 0.7rem"><%= text_header.form_agreement_1 %><a href="/"
+                        style="color: inherit; text-decoration: underline"><%= text_header.form_agreement_2 %></a></label>
+                  </div>
+                </div>
+                <div class="row justify-content-start align-items-center">
+                  <div class="col-xl-6 col-lg-12">
+                    <button type="submit" id='submit-modal' class="orange-button portfolio-header text-sm button-disabled" style="font-size:1rem; width: 80%; margin-top:2.5%;"><%= text_header.form_send_button %></button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>

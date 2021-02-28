@@ -1,0 +1,33 @@
+<link rel="stylesheet" href="/css/dropdown.css">
+<title><%= text.title %></title>
+</head>
+
+<body>
+<%- include('./parts/header') -%>
+
+
+  <div id="wrapper" class="main container-fluid" style="padding-top:0">
+    <div id="fader">
+    </div>
+    <div class="row justify-content-center align-items-center" style="padding-top:15vh; padding-bottom:15vh;">
+      <div class="col-10 col-xl-3 col-lg-5 col-md-8 px-0" style="text-align:center">
+        <h2 class="portfolio-header text-big"><%= text.label_1 %></h2></br>
+        <h4 class=" portfolio-text-sm text-big"><%= text.label_2 %></h4></br></br>
+        <h2 class="portfolio-header text-big"><%= text.label_3 %></h2></br></br>
+        <a href="/"> <button class="orange-button portfolio-header text-big text-sm" style="font-size:1.2rem !important;"><%= text.label_4 %></button></a>
+      </div>
+    </div>
+  </div>
+
+  <%- include('./parts/footer') -%>
+
+  <script>
+  $(document).ready(function() {
+  let height = $('#footer').height() + $('#header').height()
+  $('#wrapper').css('min-height', 'calc(100vh - '+height+'px )')
+})
+$("#footer").change('height', function() {
+  let height = $('#footer').height() + $('#header').height()
+  $('#wrapper').css('min-height', 'calc(100vh - '+height+'px )')
+})
+  </script>

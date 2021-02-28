@@ -1,0 +1,69 @@
+<link rel="stylesheet" href="/css/dropdown.css">
+<title><%= text.title %></title>
+</head>
+
+<body>
+<%- include('./parts/header') -%>
+
+<div id="wrapper" class="main container-fluid">
+  <div id="fader">
+  </div>
+  <div id="job-header" class="row justify-content-center align-items-center">
+    <div class="col-20 col-xl-8 px-0 px-mobile" style="text-align:left">
+      <h1 class="text-big"><%= text.header %></h1>
+    </div>
+  </div>
+  <div id="job-cards" class="row justify-content-center align-items-center" style="padding-top:5em;">
+    <div class="col-12 col-xl-8 px-0 px-mobile" style="text-align:center">
+      <div class="row justify-content-start">
+        <div class="col-sm-12 col-md-6 col-lg-4 vacancy-card-col" style="margin-bottom: 3em;">
+          <div class="card vacancy-card">
+            <div class="card-body">
+            <h2 class="portfolio-header text-big"><%= text.jobs[0].header %></h2></br>
+            <h4 class=" portfolio-text-sm text-big text-sm"><%= text.jobs[0].text %></h4>
+            </div>
+            <div class="card-footer">
+            <a href="/applyjob/dev<%= link %>"><button class="orange-button portfolio-header text-big text-sm "><%= text.button_respond %></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 vacancy-card-col" style="margin-bottom: 3em;">
+          <div class="card vacancy-card">
+            <div class="card-body">
+            <h2 class="portfolio-header text-big"><%= text.jobs[1].header %></h2></br>
+            <h4 class=" portfolio-text-sm text-big text-sm"><%= text.jobs[1].text %></h4>
+            </div>
+            <div class="card-footer">
+            <a href="/applyjob/dev2<%= link %>"><button class="orange-button portfolio-header text-big text-sm "><%= text.button_respond %></button></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-12 col-md-6 col-lg-4 vacancy-card-col" style="margin-bottom: 3em;">
+          <div class="card vacancy-card">
+            <div class="card-body">
+            <h2 class="portfolio-header text-big"><%= text.jobs[2].header %></h2></br>
+            <h4 class=" portfolio-text-sm text-big text-sm"><%= text.jobs[2].text %></h4>
+            </div>
+            <div class="card-footer">
+            <a href="/applyjob/design<%= link %>"><button class="orange-button portfolio-header text-big text-sm "><%= text.button_respond %></button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<%- include('./parts/footer') -%>
+
+<script>
+$(document).ready(function() {
+let height = $('#footer').height() + $('#header').height()
+$('#wrapper').css('min-height', 'calc(100vh - '+height+'px )')
+})
+$("#footer").change('height', function() {
+let height = $('#footer').height() + $('#header').height()
+$('#wrapper').css('min-height', 'calc(100vh - '+height+'px )')
+})
+</script>

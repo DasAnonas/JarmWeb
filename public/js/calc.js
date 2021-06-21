@@ -29,7 +29,7 @@ async function nextQuestion(id, source, ans) {
     if (outcomes.length > 0) {
       $('#calc-questions').css('display', 'none')
       $('#calc-cards').css('display', 'flex')
-      $('.calc-card').css('display', 'none')
+      $('.calc-card-workflow').css('display', 'none')
       for (var i = 1; i < (outcomes.length + 1); i++) {
         $('#calc-workflow-header').css('display', 'none')
         $('#calc-workflow-header').html(labels['cards'])

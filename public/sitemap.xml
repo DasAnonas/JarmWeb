@@ -1,0 +1,79 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+		<!--	created with www.mysitemapgenerator.com	-->
+		<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<url>
+	<loc>https://jarm-web.com/</loc>
+	<lastmod>2021-03-01T01:18:24+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/about</loc>
+	<lastmod>2021-03-01T01:18:24+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/contacts</loc>
+	<lastmod>2021-03-01T01:18:28+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/job</loc>
+	<lastmod>2021-03-01T01:18:28+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/?lang=en</loc>
+	<lastmod>2021-03-01T01:18:29+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/applyjob/dev</loc>
+	<lastmod>2021-03-01T01:18:29+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/applyjob/dev2</loc>
+	<lastmod>2021-03-01T01:18:29+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/applyjob/design</loc>
+	<lastmod>2021-03-01T01:18:29+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/about?lang=en</loc>
+	<lastmod>2021-03-01T01:18:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/contacts?lang=en</loc>
+	<lastmod>2021-03-01T01:18:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/job?lang=en</loc>
+	<lastmod>2021-03-01T01:18:30+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/?lang=ru</loc>
+	<lastmod>2021-03-01T01:18:31+01:00</lastmod>
+	<priority>1.0</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/applyjob/dev?lang=en</loc>
+	<lastmod>2021-03-01T01:18:31+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/applyjob/dev2?lang=en</loc>
+	<lastmod>2021-03-01T01:18:34+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+<url>
+	<loc>https://jarm-web.com/applyjob/design?lang=en</loc>
+	<lastmod>2021-03-01T01:18:32+01:00</lastmod>
+	<priority>0.8</priority>
+</url>
+</urlset>

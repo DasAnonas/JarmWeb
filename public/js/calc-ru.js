@@ -57,13 +57,13 @@ questions['typeofapp'] = {
       value: 'app_shop'
     },
     {
-      text: 'Клиентское приложение',
+      text: 'Клиентское',
       next: 'app_budget',
       prop: 'type',
       value: 'app_client'
     },
     {
-      text: 'Корпоративное приложение',
+      text: 'Корпоративное',
       next: 'app_budget',
       prop: 'type',
       value: 'app_corporate'

@@ -139,16 +139,16 @@
     "header": "Job openings",
     "button_respond": "Respond",
     "jobs": [{
-        "header": "Developer",
-        "text": "Lorem ipsum"
+        "header": "Interface Designer",
+        "text": "Looking for a creative designer to develop beautiful and easy to use web-interfaces. Required: <br><br> — at least 1 year of experience in the area <br> — proficiency in Figma <br> — experience with Illustrator, Photoshop <br> — experience in developing animated interfaces <br> — understanding of development processes (for example, how realistic to implement a particular element in the code) <br> — perfectionism in relation to the products we create"
       },
       {
-        "header": "DevOps Engineer",
-        "text": "Dolores est"
+        "header": "Front-end developer",
+        "text": "Looking for a junior/middle front-end-developer to implement in the code all that was designed. Required: <br><br> — 1 year or more experience. <br> — HTML5, CSS3, JavaScript ES6/7, React — at confident level <br> — Understanding of HTTP, AJAX, REST <br> — ability to understand other people's code and make your own so that it could be understood by others <br> — purposefulness, resistance to stress, desire to develop in the profession"
       },
       {
-        "header": "Designer",
-        "text": "Lores Designes"
+        "header": "Fullstack JavaScript developer",
+        "text": "Looking for a junior/middle fullstack developer with a burning eye and a desire to create the best web applications in the world. Required: <br><br> — 1-3 years in the profession <br> — Fluency and experience with JS, React <br> — Fluent and experienced with Node.js and basic libraries like express, mongoose <br> — understanding of SQL and NOSQL database principles <br> — the traditional set of personal qualities, which are usually written at the end of every job opening"
       }
     ]
   },

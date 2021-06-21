@@ -412,7 +412,7 @@ html {
   }
 
   .accordion-header, .feedback-button {
-    font-size: 1.5rem !important;
+    font-size: 1.3rem !important;
   }
 
   .logo {
@@ -433,6 +433,9 @@ html {
 .text-sm{
   font-size: 1rem !important;
 }
+.calc-header {
+  font-size: 1.7rem !important;
+}
 .calc-card-sm{
   font-size: 0.9rem !important;
 }
@@ -443,7 +446,7 @@ html {
   font-size: 2rem !important;
 }
 .answer-text{
-  font-size: 1.2rem !important;
+  font-size: 1.1rem !important;
 }
 #calc-help{
   width: 70%;
@@ -506,7 +509,11 @@ html {
   object-fit: cover;
   object-position: 0 0;
 }
-
+@media screen and (max-width:1500px) {
+  #portfolio-1:hover, #portfolio-2:hover, #portfolio-3:hover, #portfolio-4:hover {
+    height: 1000px !important;
+  }
+}
 .portfolio-text {
   color: #fff;
   text-align: left;
@@ -944,6 +951,7 @@ background-position: 0% -100%;
   text-align: left;
   height: 100%;
   margin-bottom: 3em;
+  padding: 5%;
 }
 .orange-button{
   background: #D45C41;

@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /applyjob
+Host: https://jarm-web.com
+Sitemap: https://jarm-web.com/sitemap.xml

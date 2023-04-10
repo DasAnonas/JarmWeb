@@ -43,18 +43,18 @@
     },
     "project_block": {
       "header": "Our Projects",
-      "text": "Our agency has vast experience in full cycle development of websites, online stores, landing pages and chat bots. We put our hearts into our projects and we do it by the highest professional standarts."
+      "text": "Our agency has vast experience in full cycle development of enterprise information systems, websites, online stores, landing pages and chat bots. We put our hearts into our projects and we do it by the highest professional standarts."
     },
     "project_1": {
-      "header": "“Sabai Thai Spa” Website",
-      "text": "The Design Layout creation from scratch with further realisation on Tilda."
+      "header": "Vehicle fleet management system for the agricultural company",
+      "text": "Custom development of the enterprise information system from scratch."
     },
     "project_2": {
-      "header": "Telegram Advertising platform website",
-      "text": "The Design Layout creation from scratch."
+      "header": "Information system for the ore processing plant",
+      "text": "Custom development of the enterprise information system from scratch."
     },
     "project_3": {
-      "header": "lcardio” Website",
+      "header": "“Sabai Thai Spa” Website",
       "text": "The Design Layout creation from scratch with further in-code realisation."
     },
     "project_4": {
@@ -79,7 +79,7 @@
       "text": "There are no impossible tasks for our front-end and back-end developers. Close communication with designers and marketing specialists on all stages of the project will guarantee its immacualte operation, while sacred attitude to the deadlines will save your time and nerves."
     },
     "dev_web": {
-      "header": "Website",
+      "header": "Website / Web-application",
       "text": "We create classy and high-quality websites of any kind. We are ready to bring to life your most ambitious ideas, from simple projects on Tilda and WordPress to enterprise-grade microservice web-applications."
     },
     "dev_mobile": {
@@ -140,102 +140,146 @@
     "button_respond": "Respond",
     "jobs": [{
         "header": "Interface Designer",
-        "text": "Looking for a creative designer to develop beautiful and easy to use web-interfaces. Required: <br><br> — at least 1 year of experience in the area <br> — proficiency in Figma <br> — experience with Illustrator, Photoshop <br> — experience in developing animated interfaces <br> — understanding of development processes (for example, how realistic to implement a particular element in the code) <br> — perfectionism in relation to the products we create"
+        "text": "Looking for a creative designer to develop beautiful and easy to use web-interfaces. Required: <br><br> — at least 1 year of experience in the area <br> — proficiency in Figma <br> — experience with Illustrator, Photoshop <br> — experience in developing animated interfaces <br> — perfectionism in attitude to the products we create"
       },
       {
         "header": "Front-end developer",
-        "text": "Looking for a junior/middle front-end-developer to implement in the code all that was designed. Required: <br><br> — 1 year or more experience. <br> — HTML5, CSS3, JavaScript ES6/7, React — at confident level <br> — Understanding of HTTP, AJAX, REST <br> — ability to understand other people's code and make your own so that it could be understood by others <br> — purposefulness, resistance to stress, desire to develop in the profession"
+        "text": "Looking for a junior/middle front-end-developer to implement the interfaces in the code. Required: <br><br> — 1 year+ of experience. <br> — HTML5, CSS3, JavaScript ES6/7, Vue 3 — at confident level <br> — Understanding of HTTP, XHR, REST <br> — ability to understand other people's code and make yours to be understood by others"
       },
       {
         "header": "Fullstack JavaScript developer",
-        "text": "Looking for a junior/middle fullstack developer with a burning eye and a desire to create the best web applications in the world. Required: <br><br> — 1-3 years in the profession <br> — Fluency and experience with JS, React <br> — Fluent and experienced with Node.js and basic libraries like express, mongoose <br> — understanding of SQL and NOSQL database principles <br> — the traditional set of personal qualities, which are usually written at the end of every job opening"
+        "text": "Looking for a junior/middle fullstack developer with a desire to create the best web applications in the world. Required: <br><br> — 1-3 years in the profession <br> — Fluency and experience with JS, Vue <br> — Fluency and experience with Node.js and basic libraries like Express, Mongoose, Sequelize <br> — understanding of SQL and NOSQL database principles"
       }
     ]
   },
   "applyjob": {
-  "title": "Contact us",
-  "header": "Introduce yourself",
-  "form_name_header": "Your name",
-  "form_name_placeholder": "John Smith",
-  "form_city_header": "Residence",
-  "form_city_placeholder": "Moscow city",
-  "form_contact_header": "How may we communicate with you?",
-  "form_contact_placeholder": "Choose ways of communication",
-  "form_contact": ["Phone"],
-  "form_file_1": "Select your CV ",
-  "form_file_2": "or drag it over here",
-  "form_agreement_1": "I am agreed with ",
-  "form_agreement_2": "terms of data collection",
-  "form_send_button": "Submit"
-},
-"error": {
-  "title": "Error",
-  "label_1": "An error has been occured",
-  "label_2": "Something had gone wrong during the form submission",
-  "label_3": "Try again!",
-  "label_4": "Return"
-},
-"successform": {
-  "title": "Request has been sent",
-  "label_1": "Your request has been successfully sent",
-  "label_2": "Our specialists are studying your request right now and will contact you as soon as possible!",
-  "label_3": "Thanks for your trust!",
-  "label_4": "Return"
-},
-"successcv": {
-  "title": "Request has been sent",
-  "label_1": "Your CV has been successfully sent",
-  "label_2": "We will study your CV and send you a feedback within 5 days.",
-  "label_3": "Thanks!",
-  "label_4": "Return"
-},
-"about": {
-  "title": "About us",
-  "seo": {
-    "keywords": "website development",
-    "desc": "About JARM Web Solutions"
+    "title": "Contact us",
+    "header": "Introduce yourself",
+    "form_name_header": "Your name",
+    "form_name_placeholder": "John Smith",
+    "form_city_header": "Residence",
+    "form_city_placeholder": "London",
+    "form_contact_header": "How may we communicate with you?",
+    "form_contact_placeholder": "Choose ways of communication",
+    "form_contact": ["Phone"],
+    "form_file_1": "Select your CV ",
+    "form_file_2": "or drag it over here",
+    "form_agreement_1": "I am agreed with ",
+    "form_agreement_2": "terms of data collection",
+    "form_send_button": "Submit"
   },
-  "about_block": {
-    "header": "About us",
-    "text": "We are small and solid team which is ready to accept the most serious challenges of our clients. You choose warranty of quick and quality realisation of your projects choosing us."
+  "error": {
+    "title": "Error",
+    "label_1": "An error has been occured",
+    "label_2": "Something had gone wrong during the form submission",
+    "label_3": "Try again!",
+    "label_4": "Return"
   },
-  "about_pics_header": "We guarantee",
-  "about_pics": ["Result", "Individual Approach", "Punctuallity"],
-  "about_map_header": "How do we work?",
-  "about_map": [{
-    "header": "Meeting",
-    "text": "Fifteen minutes of face-to-face conversation can clarify more questions than three days of correspondence. During the initial negotiations we will dive into the nature of your project, determine its preliminary structure, as well as the budget and deadlines. We will be glad to meet you in the virtual space using any comfortable for you communication platform."
+  "successform": {
+    "title": "Request has been sent",
+    "label_1": "Your request has been successfully sent",
+    "label_2": "Our specialists are studying your request right now and will contact you as soon as possible!",
+    "label_3": "Thanks for your trust!",
+    "label_4": "Return"
   },
-  {
-    "header": "Contract signing",
-    "text": "An agreement containing the basic terms of our partnership will help to increase our mutual trust and confidence in each other. You can view the sample agreement clicking the ",
-    "url": "/docs/dog-en.pdf",
-    "link": "link"
+  "successcv": {
+    "title": "Request has been sent",
+    "label_1": "Your CV has been successfully sent",
+    "label_2": "We will study your CV and send you a feedback within 5 days.",
+    "label_3": "Thanks!",
+    "label_4": "Return"
   },
-  {
-    "header": "Technical specification",
-    "text": "A detailed and organized description of all the details of the future project is the key to its success. We will help you to turn all the scattered wishes into a clear action plan and determine all the nuances, relying on our many years of experience in creating IT-solutions."
+  "about": {
+    "title": "About us",
+    "seo": {
+      "keywords": "website development",
+      "desc": "About JARM Web Solutions"
+    },
+    "about_block": {
+      "header": "About us",
+      "text": "We are small and solid team which is ready to accept the most serious challenges of our clients. You choose warranty of quick and quality realisation of your projects choosing us."
+    },
+    "about_pics_header": "We guarantee",
+    "about_pics": ["Result", "Individual Approach", "Punctuallity"],
+    "about_map_header": "How do we work?",
+    "about_map": [{
+        "header": "Meeting",
+        "text": "Fifteen minutes of face-to-face conversation can clarify more questions than three days of correspondence. During the initial negotiations we will dive into the nature of your project, determine its preliminary structure, as well as the budget and deadlines. We will be glad to meet you in the virtual space using any comfortable for you communication platform."
+      },
+      {
+        "header": "Contract signing",
+        "text": "An agreement containing the basic terms of our partnership will help to increase our mutual trust and confidence in each other. You can view the sample agreement clicking the ",
+        "url": "/docs/dog-en.pdf",
+        "link": "link"
+      },
+      {
+        "header": "Technical specification",
+        "text": "A detailed and organized description of all the details of the future project is the key to its success. We will help you to turn all the scattered wishes into a clear action plan and determine all the nuances, relying on our many years of experience in creating IT-solutions."
+      },
+      {
+        "header": "UX-protoypes and design layouts",
+        "text": "The mission of the UX prototypes is to determine the location of all blocks and elements in the project's user interfaces, as well as to specify the navigation routes between them. After working through the structure, we'll add some colors and style to the prototypes. We will approve the palette, fonts and interface elements created in perfect accordance with all the principles of UI design, and develop the layouts - the final visual implementation of the future product."
+      },
+      {
+        "header": "Fixes",
+        "text": "We are well aware that the complete list of the functionality of the project is not formed immediately after the start of the development, and the exact vision of how the design should look is formed after the first or even second iteration of the layouts. This is why we are ready to make changes after discussions within reasonable limits, free of charge. In unreasonable limits too, but for money — according to the terms agreed upon at the beginning of our cooperation."
+      },
+      {
+        "header": "Techincal implementation",
+        "text": "After a final approval of all prototypes and layouts, it's just a question of technical implementation. Our developers will assemble and test the project, ensure its speed and perfect operation on all devices."
+      },
+      {
+        "header": "Приём работ",
+        "text": "We will have to overshadow this important moment by the necessary routine - we will tell and show you how to use the project and manage its content, hand over the manual and all other documentation."
+      },
+      {
+        "header": "Support",
+        "text": "We never leave our customers alone in the stormy sea of Internet technologies. Our specialists are always ready to come and give you a hand, providing advice on any issue or troubleshooting. In addition, we are happy to help you with expanding the project functionality, promotion or social media management."
+      }
+    ],
+    "form_button": "Let's try!"
   },
-  {
-    "header": "UX-protoypes and design layouts",
-    "text": "The mission of the UX prototypes is to determine the location of all blocks and elements in the project's user interfaces, as well as to specify the navigation routes between them. After working through the structure, we'll add some colors and style to the prototypes. We will approve the palette, fonts and interface elements created in perfect accordance with all the principles of UI design, and develop the layouts - the final visual implementation of the future product."
+  "gold": {
+    "title": "Information system for the ore processing plant",
+    "seo": {
+      "keywords": "website information system development",
+      "desc": "JARM Web Solutions portfolio case"
+    },
+    "header": "Information system for the ore processing plant",
+    "mainDesc": "We’ve developed an enterprise cloud IS for digitalization of processes in a mining factory",
+    "objective": "Objective",
+    "objectiveText": "The goal of the project was to develop a dispatch service, laboratory management system and production data reports service for a gold processing plant with a complex production chain.",
+    "tech": "The technology stack",
+    "techText": "• Node.js, Express for the server side of the solution — speed of development, efficiency, scalability <br> • Vue.js — the gold standard for developing a complex dynamic front-end <br> • Bootstrap — allows us to make beautiful and adaptive web-applications in the shortest possible time period while the built-in set of prepared elements saves time and budget of the client in projects where we don't need design communication with the brand <br> • AG Grid — stylish and functional engine for the tabular data presentation",
+    "impl": "Implementation",
+    "implText1": "The main data sources in the system are telemetry from production equipment and forms in the application. We integrated the data flow from the devices into our API and made the forms interactive and user-friendly — all for the maximum productivity and efficiency.",
+    "implText2": "Production information is available for viewing in dashboards — in the form of data visualizations and tables. The system can calculate complex metrics and export processed data to third-party systems.",
+    "implText3": "We also digitized the laboratory division of the company — we introduced a system for labeling of laboratory samples at all the  stages of their life cycle and effective services to monitor their real-time condition.",
+    "implText4": "All the settings and content of the system are managed via a user-friendly administration system — everything can be done in a several clicks.",
+    "result": "Result",
+    "resultText": "We developed and implemented the system which has significantly increased productivity and efficiency of the company’s operation. Management has obtained instant access to a detailed summary of the production data, while operators save their time from fighting a poorly organized data workflow. The customer decided to continue working with us and further expand the range of functionality of the system.",
+    "form_button": "Let's try!"
   },
-  {
-    "header": "Fixes",
-    "text": "We are well aware that the complete list of the functionality of the project is not formed immediately after the start of the development, and the exact vision of how the design should look is formed after the first or even second iteration of the layouts. This is why we are ready to make changes after discussions within reasonable limits, free of charge. In unreasonable limits too, but for money — according to the terms agreed upon at the beginning of our cooperation."
-  },
-  {
-    "header": "Techincal implementation",
-    "text": "After a final approval of all prototypes and layouts, it's just a question of technical implementation. Our developers will assemble and test the project, ensure its speed and perfect operation on all devices."
-  },
-  {
-    "header": "Приём работ",
-    "text": "We will have to overshadow this important moment by the necessary routine - we will tell and show you how to use the project and manage its content, hand over the manual and all other documentation."
-  },
-  {
-    "header": "Support",
-    "text": "We never leave our customers alone in the stormy sea of Internet technologies. Our specialists are always ready to come and give you a hand, providing advice on any issue or troubleshooting. In addition, we are happy to help with project promotion or social media management."
-  }],
-  "form_button": "Let's try!"
-}
+  "agro": {
+    "title": "Vehicle fleet management system for the agricultural company",
+    "seo": {
+      "keywords": "website information system development",
+      "desc": "JARM Web Solutions portfolio case"
+    },
+    "header": "Vehicle fleet management system for the agricultural company",
+    "mainDesc": "We’ve developed a cloud system to monitor and control motorized agricultural equipment",
+    "objective": "Objective",
+    "objectiveText": "The goal was to develop a complex solution for tracking productivity and management of vehicles fleet, integrating with the already existing GPS-trackers.",
+    "tech": "The technology stack",
+    "techText": "• Node.js, Express for server part of the solution — the key factor of the choice was a convenience of development and availability of powerful libraries to handle GPS coordinates <br> • Vue.js for the client part of the solution — allowed us to implement dynamic pages of the application in a reasonable amount of time, while maintaining the maximum scalability <br> • Openlayers — JavaScript library that we used as a basis for developing cartography service in the project <br> • AG Grid — powerful table engine that we used for displaying data in the dashboards",
+    "impl": "Implementation",
+    "implText1": "The first step in project development was to set up the integration with legacy geolocation trackers. Using the received geodata the system calculates the main metrics of vehicles operation — mileage, time and the area cultivated.",
+    "implText2": "Fleet management is handled in the administration system, where users can set the interval between maintenance or assign a required agricultural device or geoarea for further calculation of cultivation parameters.",
+    "implText3": "We've introduced cartography support based on the Openlayers solution for viewing the location of vehicles in real time and drawing geo areas contours with a maximum degree of accuracy relative to the actual landscape.",
+    "implText4": "For achieving the maximum degree of control over the fleet, we've developed an event log where warnings about expiry of the service interval and vehicles entering restricted areas automatically appear, as well as reports on faults and repairs carried out. Notifications are also duplicated in Telegram bot for immediate response to incidents.",
+    "implText5": "In addition, we have simplified the document workflow by creating a form for the automatic generation of waybills based on specified parameters and their submission for printing. The system creates and stores templates, making work with them even more efficient.",
+    "result": "Result",
+    "resultText": "The developed system is used in many processes of the company's activities — it helps to save fuel and calculate labor costs, increase production efficiency by rapidly reacting to incidents while the analytics of the comprehensive production data flow allows to identify bottlenecks and increase overall productivity. Integration of the system with existing equipment made it possible to achieve the required functionality in the shortest possible time with maximum savings on the customer's budget.",
+    "form_button": "Let's try!"
+  }
 }

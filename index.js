@@ -21,7 +21,7 @@ app.use(Routes)
 
 	const { PORT } = 3000
 
-	app.listen(80, () => {
-		console.log(`Порт: 80`)
+	app.listen(3000, () => {
+		console.log(`Порт: 3000`)
 	})
 })();

@@ -483,14 +483,12 @@ html {
 }
 
 #portfolio-1:hover {
-  height: 1500px !important;
   transition: ease 0.5s;
   object-fit: cover;
   object-position: 0 0;
 }
 
 #portfolio-2:hover {
-  height: 1500px !important;
   transition: ease 0.5s;
   object-fit: cover;
   object-position: 0 0;
@@ -510,7 +508,7 @@ html {
   object-position: 0 0;
 }
 @media screen and (max-width:1500px) {
-  #portfolio-1:hover, #portfolio-2:hover, #portfolio-3:hover, #portfolio-4:hover {
+ #portfolio-3:hover, #portfolio-4:hover {
     height: 1000px !important;
   }
 }

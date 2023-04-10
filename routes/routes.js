@@ -154,7 +154,7 @@ router.post('/sendform', checkSpam,  async (req, res) => {
 
     	const url = host + 'request';
 		let lang = 'en';
-		if (req.body.lang && (req.body.lang == "en"))
+		if (req.body.lang && (req.body.lang === "ru"))
 			lang = 'ru';
         request.post(url, {json: json}, (error, result, body) => {
 			if (error) {
@@ -179,7 +179,7 @@ router.post('/sendform', checkSpam,  async (req, res) => {
 	} catch (error) {
     	console.log(error);
 		let lang = 'en';
-		if (req.body.lang && (req.body.lang == "en"))
+		if (req.body.lang && (req.body.lang === "ru"))
 			lang = 'ru';
 		res.render('error', {
 			layout: 'layouts/basic',
@@ -223,7 +223,7 @@ router.post('/sendcv', checkSpam,  async (req, res) => {
 
     	const url = host + 'requestcv';
 		let lang = 'en';
-		if (req.body.lang && (req.body.lang == "en"))
+		if (req.body.lang && (req.body.lang === "ru"))
 			lang = 'ru';
         request.post(url, {json: json}, (error, result, body) => {
 			if (error) {
@@ -248,7 +248,7 @@ router.post('/sendcv', checkSpam,  async (req, res) => {
 	} catch (error) {
     	console.log(error);
 		let lang = 'en';
-		if (req.body.lang && (req.body.lang == "en"))
+		if (req.body.lang && (req.body.lang === "ru"))
 			lang = 'ru';
 		res.render('error', {
 			layout: 'layouts/basic',

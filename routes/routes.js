@@ -119,7 +119,8 @@ router.post('/sendform', checkSpam,  async (req, res) => {
 	try {
 		const json = {
 			contacts: [],
-			file: []
+			file: [],
+			service: ''
 		};
     	if (req.files){
     		if (req.files.length>1)
@@ -133,7 +134,7 @@ router.post('/sendform', checkSpam,  async (req, res) => {
     	if (req.body.service){
     		if ((req.body.service.length>1) && Array.isArray(req.body.service)){
        			for (let obj of req.body.service){
-        			json.service = json.service + " " + obj;
+        			json.service += obj + ' ';
         		}
     		} else 
     			json.service = req.body.service;

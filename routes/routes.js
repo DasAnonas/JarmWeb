@@ -141,11 +141,11 @@ router.post('/sendform', checkSpam,  async (req, res) => {
 
     	if (req.body.mail)
     		json.contacts.push({type: "Почта", info: req.body.mail});
-		if (req.body.mail)
+		if (req.body.phone)
 			json.contacts.push({type: "Телефон", info: req.body.phone});
-		if (req.body.mail)
+		if (req.body.tg)
 			json.contacts.push({type: "Telegram", info: req.body.tg});
-		if (req.body.mail)
+		if (req.body.whatsapp)
 			json.contacts.push({type: "WhatsApp", info: req.body.whatsapp});
     	if (req.body.name)
 			json.name = req.body.name
@@ -210,11 +210,11 @@ router.post('/sendcv', checkSpam,  async (req, res) => {
 
     	if (req.body.mail)
     		json.contacts.push({type: "Почта", info: req.body.mail});
-		if (req.body.mail)
+		if (req.body.phone)
 			json.contacts.push({type: "Телефон", info: req.body.phone});
-		if (req.body.mail)
+		if (req.body.tg)
 			json.contacts.push({type: "Telegram", info: req.body.tg});
-		if (req.body.mail)
+		if (req.body.whatsapp)
 			json.contacts.push({type: "WhatsApp", info: req.body.whatsapp});
     	if (req.body.name)
 			json.name = req.body.name

@@ -2,7 +2,7 @@ const { Router } = require('express')
 const router = Router()
 var fs = require('fs');
 const request = require('request')
-const host = "http://api-gateway:3123/"
+const host = "http://jarmtg:3123/"
 
 const locale = {};
 locale.ru = JSON.parse(fs.readFileSync('./lang/ru.json'))
